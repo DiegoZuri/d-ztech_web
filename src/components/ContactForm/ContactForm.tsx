@@ -16,7 +16,7 @@ const projectTypes = [
   'Other',
 ]
 
-const budgets = ['Under $10k', '$10k – $25k', '$25k – $50k', '$50k – $100k', '$100k+', 'Not sure yet']
+const budgets = ['Under $1k', '$1k – $3k', '$3k – $5k', '$5k – $10k', '$10k+', 'Not sure yet']
 
 const initialValues: ContactFormValues = {
   name: '',

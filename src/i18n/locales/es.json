@@ -1,0 +1,357 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "solutions": "Soluciones",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "letsTalk": "Hablemos"
+  },
+  "company": {
+    "tagline": "Construimos tecnología que impulsa a las empresas hacia adelante.",
+    "location": "Trabajo remoto, con clientes en todo el mundo"
+  },
+  "footer": {
+    "description": "Diseñamos y construimos software a medida, productos digitales y plataformas tecnológicas para empresas que quieren avanzar más rápido y operar de forma más inteligente.",
+    "navigation": "Navegación",
+    "services": "Servicios",
+    "getInTouch": "Contáctanos",
+    "startProject": "Iniciar un proyecto",
+    "rights": "Todos los derechos reservados.",
+    "designed": "Diseñado y desarrollado con precisión."
+  },
+  "common": {
+    "learnMore": "Saber más",
+    "startAConversation": "Iniciar una conversación",
+    "startAProject": "Iniciar un proyecto",
+    "startAProjectEyebrow": "INICIA UN PROYECTO",
+    "exploreServices": "Explorar servicios",
+    "viewAllServices": "Ver todos los servicios",
+    "learnAboutApproach": "Conoce nuestro enfoque",
+    "exploreSolutions": "Explorar soluciones",
+    "viewSolutions": "Ver soluciones",
+    "seeServices": "Ver nuestros servicios",
+    "all": "Todo"
+  },
+  "heroVisual": {
+    "deployments": "Despliegues",
+    "allSystemsLive": "Todos los sistemas activos",
+    "cloudSynced": "Sincronizado en la nube"
+  },
+  "solutionCard": {
+    "problem": "Problema",
+    "solution": "Solución",
+    "result": "Resultado"
+  },
+  "home": {
+    "seo": {
+      "title": "Desarrollo de Software y Soluciones Digitales",
+      "description": "D&Z Technologies diseña y construye software a medida, aplicaciones web, apps móviles, plataformas SaaS y sistemas de automatización que impulsan a las empresas hacia adelante."
+    },
+    "eyebrow": "Software · Tecnología · Innovación",
+    "heroTitle": "Construimos tecnología que impulsa a las empresas hacia adelante.",
+    "heroDescription": "Diseñamos y desarrollamos software a medida, productos digitales, aplicaciones web y móviles, plataformas SaaS y sistemas de automatización, diseñados para ayudar a las empresas a operar de forma más inteligente y crecer más rápido.",
+    "valueStrip": ["Software a medida", "Aplicaciones web", "Apps móviles", "Plataformas SaaS", "Automatización", "Soluciones de IA"],
+    "servicesEyebrow": "Qué hacemos",
+    "servicesTitle": "Tecnología construida alrededor de tu negocio.",
+    "servicesDescription": "Desde plataformas a medida hasta experiencias móviles, construimos software que se adapta a cómo realmente opera tu negocio.",
+    "processEyebrow": "Cómo trabajamos",
+    "processTitle": "De la idea a un producto escalable.",
+    "processDescription": "Un proceso claro y estructurado que lleva el reto de tu negocio desde la primera conversación hasta un producto funcionando en producción.",
+    "processSteps": [
+      { "number": "01", "title": "Descubrir", "description": "Empezamos por entender tu negocio, tus usuarios y el problema que realmente vale la pena resolver." },
+      { "number": "02", "title": "Diseñar", "description": "Mapeamos la experiencia del producto y la arquitectura técnica antes de escribir una sola línea de código." },
+      { "number": "03", "title": "Construir", "description": "Desarrollamos en iteraciones enfocadas, con visibilidad del avance en cada etapa." },
+      { "number": "04", "title": "Lanzar", "description": "Lanzamos con cuidado, con pruebas y monitoreo integrados en el proceso de despliegue." },
+      { "number": "05", "title": "Escalar", "description": "Damos soporte y evolucionamos el producto a medida que crecen tu uso y tus necesidades." }
+    ],
+    "techEyebrow": "Ecosistema tecnológico",
+    "techTitle": "Impulsado por un stack moderno y probado.",
+    "techDescription": "Elegimos la tecnología de forma deliberada: probada donde la confiabilidad importa, moderna donde genera una ventaja. Pasa el cursor por un nodo para explorar.",
+    "ctaTitle": "¿Tienes una idea que vale la pena construir?",
+    "ctaDescription": "Convirtamos el reto de tu negocio en un producto digital."
+  },
+  "services": {
+    "seo": {
+      "title": "Servicios de Desarrollo de Software",
+      "description": "Servicios de software a medida, web, móvil, SaaS, automatización, IA e integraciones, diseñados para necesidades reales del negocio."
+    },
+    "heroEyebrow": "Servicios",
+    "heroTitle": "Servicios tecnológicos diseñados para necesidades reales del negocio.",
+    "heroDescription": "Cubrimos todo el ciclo de vida del desarrollo de software, desde la primera línea de código hasta los sistemas que mantienen tu producto funcionando. Cada proyecto se define en torno a un resultado de negocio concreto, no a un paquete genérico.",
+    "technologiesLabel": "Tecnologías",
+    "useCasesLabel": "Casos de uso comunes",
+    "crossLinkEyebrow": "¿Buscas un resultado de negocio en lugar de un servicio?",
+    "crossLinkTitle": "Descubre cómo estos servicios se traducen en soluciones reales para tu negocio.",
+    "ctaTitle": "¿No sabes qué servicio se ajusta a ti?",
+    "ctaDescription": "Cuéntanos sobre tu proyecto y te ayudaremos a encontrar el enfoque correcto.",
+    "items": {
+      "custom-software": {
+        "title": "Desarrollo de Software a Medida",
+        "short": "Software diseñado alrededor de tus procesos exactos, no al revés.",
+        "description": "Diseñamos y construimos sistemas de software a medida, adaptados a cómo realmente opera tu negocio, reemplazando herramientas rígidas por soluciones que se ajustan a tus flujos de trabajo, tus datos y tus planes de crecimiento.",
+        "benefits": [
+          "Construido alrededor de tus flujos de trabajo reales, en lugar de obligarte a adaptarte",
+          "Propiedad total del código y la arquitectura",
+          "Escala junto con tu equipo y tus datos",
+          "Sin dependencia de licencias ni sorpresas de precio por usuario"
+        ],
+        "useCases": ["Plataformas de operaciones internas", "Modernización de sistemas heredados", "Herramientas de negocio con uso intensivo de datos"]
+      },
+      "web-development": {
+        "title": "Desarrollo Web",
+        "short": "Aplicaciones web rápidas, accesibles y muy bien diseñadas.",
+        "description": "Desde sitios de marketing hasta aplicaciones web complejas, construimos frontends de alto rendimiento y backends resilientes usando frameworks modernos, pensados para velocidad, SEO y mantenibilidad a largo plazo.",
+        "benefits": [
+          "Tiempos de carga por debajo de un segundo y buenos Core Web Vitals",
+          "Interfaces responsivas y accesibles por defecto",
+          "Arquitectura de componentes pensada para reutilización y escala",
+          "Bases optimizadas para SEO desde el primer día"
+        ],
+        "useCases": ["Sitios corporativos y de producto", "Portales de clientes", "Aplicaciones web progresivas"]
+      },
+      "mobile-development": {
+        "title": "Desarrollo de Aplicaciones Móviles",
+        "short": "Apps con sensación nativa para iOS y Android desde una sola base de código.",
+        "description": "Diseñamos y desarrollamos aplicaciones móviles multiplataforma que se sienten nativas, funcionan de forma confiable y se conectan sin fricción a tus sistemas y APIs existentes.",
+        "benefits": [
+          "Una sola base de código para iOS y Android reduce costo y tiempo de salida al mercado",
+          "Rendimiento nativo y UX adecuada a cada plataforma",
+          "Arquitectura offline-first donde realmente importa",
+          "Integración fluida con tus backends existentes"
+        ],
+        "useCases": ["Apps para clientes finales", "Apps de campo y logística", "Herramientas móviles internas"]
+      },
+      "saas-development": {
+        "title": "Desarrollo de SaaS",
+        "short": "Plataformas multi-tenant construidas para lanzar, escalar y evolucionar.",
+        "description": "Diseñamos y construimos productos SaaS de principio a fin: desde modelos de datos multi-tenant y facturación hasta flujos de onboarding y herramientas de administración, pensados para escalar junto con tu base de clientes.",
+        "benefits": [
+          "Arquitectura multi-tenant pensada para escalar desde el primer día",
+          "Facturación por suscripción y medición de uso integradas",
+          "Separación clara entre el núcleo del producto y la configuración por cliente",
+          "Analítica y herramientas de administración para tus equipos internos"
+        ],
+        "useCases": ["Plataformas SaaS B2B", "Productos de software vertical", "Herramientas internas convertidas en producto"]
+      },
+      "business-automation": {
+        "title": "Automatización de Procesos",
+        "short": "Elimina el trabajo manual de los procesos que frenan a tu equipo.",
+        "description": "Identificamos procesos manuales repetitivos y propensos a errores, y los reemplazamos con flujos automatizados confiables, conectados directamente a los sistemas que tu equipo ya usa.",
+        "benefits": [
+          "Menos errores manuales y menos trabajo repetitivo",
+          "Procesos operativos con tiempos de respuesta más rápidos",
+          "Automatizaciones que se integran con tus herramientas actuales",
+          "Trazabilidad clara de cada acción automatizada"
+        ],
+        "useCases": ["Procesamiento de documentos y datos", "Flujos de aprobación", "Pipelines de reportes"]
+      },
+      "ai-solutions": {
+        "title": "IA y Soluciones de Datos",
+        "short": "Funcionalidades de IA prácticas, basadas en tus datos, no en la moda.",
+        "description": "Ayudamos a las empresas a aplicar IA donde realmente genera valor: búsqueda inteligente, clasificación, resúmenes y apoyo a la toma de decisiones, construidos sobre bases de datos sólidas.",
+        "benefits": [
+          "Funcionalidades de IA definidas en torno a resultados de negocio medibles",
+          "Construidas sobre tus propios datos, manejados de forma segura",
+          "Diseño con supervisión humana donde la precisión importa",
+          "Monitoreo claro del desempeño del modelo a lo largo del tiempo"
+        ],
+        "useCases": ["Procesamiento inteligente de documentos", "Búsqueda y recomendaciones", "Copilotos internos"]
+      },
+      "system-integrations": {
+        "title": "Integraciones de APIs y Sistemas",
+        "short": "Haz que tus sistemas se comuniquen entre sí de forma confiable.",
+        "description": "Conectamos las herramientas de las que ya depende tu negocio (CRMs, ERPs, proveedores de pago, bases de datos internas) mediante integraciones robustas y bien documentadas que mantienen los datos consistentes en todas partes.",
+        "benefits": [
+          "Una única fuente de verdad entre sistemas desconectados",
+          "Sincronización de datos confiable y monitoreada",
+          "APIs documentadas sobre las que tu equipo puede construir",
+          "Menos captura manual de datos entre plataformas"
+        ],
+        "useCases": ["Sincronización CRM ↔ ERP", "Integraciones de pagos y facturación", "Almacenamiento de datos (data warehousing)"]
+      },
+      "business-systems": {
+        "title": "Sistemas de Negocio",
+        "short": "Plataformas diseñadas a medida para cómo funciona tu organización.",
+        "description": "Desde dashboards internos hasta plataformas operativas completas, construimos los sistemas que soportan la toma de decisiones del día a día, combinando datos, flujos de trabajo y reportes en un solo lugar.",
+        "benefits": [
+          "Visibilidad centralizada entre departamentos",
+          "Dashboards a medida para decisiones en tiempo real",
+          "Accesos basados en roles, alineados a tu estructura organizacional",
+          "Diseñado para crecer junto con nuevas unidades de negocio"
+        ],
+        "useCases": ["Dashboards gerenciales", "Plataformas operativas", "Sistemas de reportes y analítica"]
+      }
+    }
+  },
+  "solutions": {
+    "seo": {
+      "title": "Soluciones Tecnológicas para Negocios",
+      "description": "Soluciones digitales construidas alrededor de cómo funciona tu negocio: desde CRM y ERP hasta e-commerce, dashboards y herramientas de negocio potenciadas por IA."
+    },
+    "heroEyebrow": "Soluciones",
+    "heroTitle": "Soluciones digitales construidas alrededor de cómo funciona tu negocio.",
+    "heroDescription": "No empezamos por la tecnología: empezamos por cómo realmente opera tu negocio. Cada solución a continuación es una categoría de problema que ayudamos a resolver, adaptada a tu operación específica.",
+    "industriesEyebrow": "Industrias",
+    "industriesTitle": "Diseñado para distintas industrias.",
+    "industriesDescription": "La misma disciplina de ingeniería, aplicada a las particularidades de tu sector.",
+    "ctaTitle": "¿Tienes un problema de negocio, no una especificación técnica?",
+    "ctaDescription": "Cuéntanos cómo funciona tu negocio hoy y te ayudaremos a definir qué construir.",
+    "items": {
+      "business-management": {
+        "title": "Sistemas de Gestión Empresarial",
+        "category": "Operaciones",
+        "problem": "Equipos que gestionan operaciones entre hojas de cálculo, correos y herramientas desconectadas.",
+        "solution": "Una plataforma centralizada, adaptada a tus procesos, roles y necesidades de reporte.",
+        "result": "Una única fuente de verdad, menos errores y decisiones más rápidas en el día a día."
+      },
+      "crm": {
+        "title": "Plataformas CRM",
+        "category": "Ventas y Clientes",
+        "problem": "Datos de clientes dispersos entre bandejas de entrada, hojas de cálculo y herramientas genéricas que no se ajustan a tu proceso de ventas.",
+        "solution": "Un CRM construido alrededor de tu pipeline real, el ciclo de vida del cliente y la estructura de tu equipo.",
+        "result": "Una vista clara de cada relación y un proceso de ventas que tu equipo realmente sigue."
+      },
+      "erp": {
+        "title": "Sistemas ERP",
+        "category": "Operaciones",
+        "problem": "Finanzas, inventario y operaciones funcionando sobre sistemas heredados desconectados entre sí.",
+        "solution": "Un núcleo ERP unificado que conecta operaciones, finanzas y reportes en tiempo real.",
+        "result": "Datos consistentes entre departamentos y una reducción drástica de la conciliación manual."
+      },
+      "pos": {
+        "title": "Punto de Venta (POS)",
+        "category": "Retail",
+        "problem": "Ventas en tienda y en línea registradas por separado, sin una vista unificada del inventario.",
+        "solution": "Un sistema POS moderno, conectado directamente al inventario, los reportes y los canales en línea.",
+        "result": "Niveles de stock precisos, checkout más rápido y visibilidad unificada de las ventas."
+      },
+      "inventory-management": {
+        "title": "Gestión de Inventario",
+        "category": "Operaciones",
+        "problem": "Discrepancias de stock, conteos manuales y visibilidad limitada entre ubicaciones.",
+        "solution": "Un sistema de inventario en tiempo real con seguimiento automatizado y soporte multi-ubicación.",
+        "result": "Menos quiebres de stock, menos sobreinventario y cifras confiables en las que tu equipo puede apoyarse."
+      },
+      "ecommerce": {
+        "title": "Plataformas de E-commerce",
+        "category": "Retail",
+        "problem": "Tiendas en línea genéricas que no soportan tu catálogo, tu lógica de precios ni tu logística de entrega.",
+        "solution": "Una experiencia de e-commerce a medida, construida alrededor de tus productos y tu operación.",
+        "result": "Una tienda que escala con la demanda y refleja tu marca con precisión."
+      },
+      "saas-platforms": {
+        "title": "Plataformas SaaS",
+        "category": "Producto",
+        "problem": "Una herramienta interna o idea con verdadero potencial de producto, pero sin un camino claro al mercado.",
+        "solution": "Una plataforma SaaS multi-tenant, lista para producción, construida para clientes reales.",
+        "result": "Un producto listo para dar de alta, facturar y dar soporte a clientes que pagan."
+      },
+      "dashboards-analytics": {
+        "title": "Dashboards y Analítica",
+        "category": "Datos",
+        "problem": "Decisiones tomadas por intuición porque los datos viven en demasiados lugares distintos.",
+        "solution": "Dashboards centralizados que convierten los datos operativos en información clara y en tiempo real.",
+        "result": "Decisiones más rápidas y con mayor confianza, respaldadas por datos en vivo."
+      },
+      "ai-business-tools": {
+        "title": "Herramientas de Negocio con IA",
+        "category": "Automatización",
+        "problem": "Tareas manuales de alto volumen como revisión de documentos, etiquetado o triage de soporte.",
+        "solution": "Herramientas asistidas por IA que asumen trabajo cognitivo repetitivo con supervisión humana.",
+        "result": "Más producción con el mismo equipo, con controles de calidad integrados."
+      }
+    },
+    "industries": {
+      "retail": "Retail",
+      "professional-services": "Servicios Profesionales",
+      "real-estate": "Bienes Raíces",
+      "automotive": "Automotriz",
+      "healthcare": "Salud",
+      "education": "Educación",
+      "logistics": "Logística",
+      "technology-saas": "Tecnología y SaaS"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Acerca de D&Z Technologies",
+      "description": "Quiénes somos, en qué creemos y cómo D&Z Technologies aborda el desarrollo de software a medida."
+    },
+    "heroEyebrow": "Nosotros",
+    "heroTitle": "Tecnología con propósito.",
+    "heroDescription": "D&Z Technologies es una empresa de desarrollo de software construida alrededor de una idea simple: la tecnología debe hacer que un negocio sea medible y mejor, no solo verse impresionante. Todo lo que construimos se evalúa bajo ese estándar.",
+    "blocks": [
+      { "title": "Quiénes somos", "body": "Un equipo de desarrollo de software enfocado en construir productos digitales a medida: plataformas web, apps móviles, productos SaaS y los sistemas que operan detrás de ellos." },
+      { "title": "En qué creemos", "body": "El buen software se mide por sus resultados, no solo por su estética. Creemos en la comunicación clara, la arquitectura sólida y en construir cosas que sean realmente mantenibles." },
+      { "title": "Cómo trabajamos", "body": "Colaboración cercana, entregas iterativas y criterio técnico honesto, incluso cuando eso significa recomendar una solución más simple que la que se pidió originalmente." }
+    ],
+    "approachEyebrow": "Nuestro enfoque",
+    "approachTitle": "Qué hace diferente a nuestro proceso.",
+    "approachDescription": "Un enfoque metódico de cinco etapas que mantiene cada decisión de ingeniería anclada a las necesidades reales de tu negocio, desde el primer día hasta el lanzamiento y más allá.",
+    "approachSteps": [
+      { "number": "01", "title": "Entender", "description": "Empezamos por conocer tu negocio, tus usuarios y las restricciones reales detrás de la solicitud, no solo la lista de funcionalidades." },
+      { "number": "02", "title": "Definir estrategia", "description": "Definimos el alcance y la dirección técnica correctos antes de comprometernos a construir, para que el esfuerzo se invierta donde realmente importa." },
+      { "number": "03", "title": "Diseñar", "description": "Diseñamos la experiencia y la arquitectura en conjunto, para que el producto sea coherente desde la interfaz hasta el modelo de datos." },
+      { "number": "04", "title": "Desarrollar", "description": "Construimos en iteraciones enfocadas y visibles, con software funcional que puedes ver y sobre el que puedes dar retroalimentación en todo momento." },
+      { "number": "05", "title": "Mejorar", "description": "Tratamos el lanzamiento como un punto de partida. Monitoreamos, escuchamos y seguimos refinando a medida que el uso real revela lo que importa." }
+    ],
+    "valuesEyebrow": "Valores",
+    "valuesTitle": "Aquello a lo que nos exigimos.",
+    "values": [
+      { "title": "Innovación", "description": "Nos mantenemos cerca de herramientas y técnicas modernas, y las aplicamos solo donde realmente mejoran el resultado." },
+      { "title": "Calidad", "description": "Tratamos la calidad del código, las pruebas y la confiabilidad como parte del entregable, no como un añadido." },
+      { "title": "Transparencia", "description": "Siempre debes saber qué se está construyendo, por qué y en qué punto va. Sin cajas negras." },
+      { "title": "Colaboración", "description": "El mejor software surge de una alianza real entre el conocimiento de tu equipo y nuestra ingeniería." },
+      { "title": "Escalabilidad", "description": "Diseñamos sistemas pensados para el negocio hacia el que te diriges, no solo para el que tienes hoy." }
+    ],
+    "ctaTitle": "¿Quieres saber si somos el equipo adecuado?",
+    "ctaDescription": "La mejor forma de averiguarlo es conversando sobre lo que estás construyendo."
+  },
+  "contact": {
+    "seo": {
+      "title": "Contacto",
+      "description": "Cuéntanos sobre tu proyecto. A D&Z Technologies le encantaría ayudarte a convertirlo en software funcional."
+    },
+    "heroEyebrow": "Contacto",
+    "heroTitle": "Construyamos algo que valga la pena.",
+    "heroDescription": "Cuéntanos sobre el problema que estás tratando de resolver. Te responderemos con ideas concretas, no con un guion de ventas.",
+    "sideTitle": "Cuéntanos qué estás construyendo.",
+    "sideDescription": "¿No estás seguro de dónde encaja tu proyecto? Este es el tipo de trabajo que más solemos recibir.",
+    "categories": ["Software a medida", "Aplicación web", "App móvil", "Plataforma SaaS", "Automatización", "Solución de IA", "Integración", "Algo más"]
+  },
+  "contactForm": {
+    "nameLabel": "Nombre",
+    "companyLabel": "Empresa",
+    "emailLabel": "Correo electrónico",
+    "phoneLabel": "Teléfono",
+    "projectTypeLabel": "Tipo de proyecto",
+    "budgetLabel": "Presupuesto estimado",
+    "messageLabel": "Mensaje",
+    "namePlaceholder": "Jane Cooper",
+    "companyPlaceholder": "Nombre de la empresa",
+    "emailPlaceholder": "jane@empresa.com",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "messagePlaceholder": "Cuéntanos qué estás construyendo, qué problema estás resolviendo y los tiempos que tienes en mente.",
+    "selectProjectType": "Selecciona un tipo de proyecto",
+    "selectRange": "Selecciona un rango",
+    "projectTypes": ["Software a medida", "Aplicación web", "App móvil", "Plataforma SaaS", "Automatización", "Solución de IA", "Otro"],
+    "budgets": ["Menos de $1,000", "$1,000 – $3,000", "$3,000 – $5,000", "$5,000 – $10,000", "$10,000+", "Aún no lo sé"],
+    "successTitle": "Solicitud enviada.",
+    "successDescription": "Gracias por escribirnos: ya recibimos los detalles de tu proyecto y te responderemos pronto.",
+    "sendAnother": "Enviar otra solicitud",
+    "errorMessage": "Algo salió mal al enviar tu solicitud. Por favor, inténtalo de nuevo.",
+    "sending": "Enviando solicitud…",
+    "submit": "Enviar solicitud de proyecto",
+    "errors": {
+      "nameRequired": "Cuéntanos tu nombre.",
+      "nameShort": "El nombre parece demasiado corto.",
+      "emailRequired": "Agrega un correo electrónico.",
+      "emailInvalid": "Ese correo electrónico no parece válido.",
+      "phoneInvalid": "Ese número de teléfono no parece válido.",
+      "projectTypeRequired": "Selecciona el tipo de proyecto.",
+      "messageRequired": "Cuéntanos un poco sobre lo que necesitas.",
+      "messageShort": "Agrega un poco más de detalle (mínimo 20 caracteres)."
+    }
+  }
+}

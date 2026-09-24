@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { technologies, techCategories } from '@/data/technologies'
 import isotipo from '@/assets/logo/isotipo.png'
 
@@ -13,6 +14,7 @@ function positionFor(index: number, total: number) {
 }
 
 export default function TechnologyGrid() {
+  const { t } = useTranslation()
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
   const [hovered, setHovered] = useState<string | null>(null)
 
@@ -28,7 +30,7 @@ export default function TechnologyGrid() {
               : 'border-border text-muted hover:border-border-strong hover:text-text'
           }`}
         >
-          All
+          {t('common.all')}
         </button>
         {techCategories.map((cat) => (
           <button

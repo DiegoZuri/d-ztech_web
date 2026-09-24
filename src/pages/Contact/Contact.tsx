@@ -1,37 +1,26 @@
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Seo from '@/components/Seo/Seo'
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import AnimatedSection from '@/components/AnimatedSection/AnimatedSection'
 import ContactForm from '@/components/ContactForm/ContactForm'
 import { company } from '@/data/nav'
 
-const projectCategories = [
-  'Custom Software',
-  'Web Application',
-  'Mobile App',
-  'SaaS Platform',
-  'Automation',
-  'AI Solution',
-  'Integration',
-  'Something else',
-]
-
 export default function Contact() {
+  const { t } = useTranslation()
+  const projectCategories = t('contact.categories', { returnObjects: true }) as string[]
+
   return (
     <>
-      <Seo
-        title="Contact"
-        description="Tell us about your project. D&Z Technologies would love to help you turn it into working software."
-        path="/contact"
-      />
+      <Seo title={t('contact.seo.title')} description={t('contact.seo.description')} path="/contact" />
 
       <section className="pb-24 pt-40 sm:pb-28 sm:pt-48">
         <div className="shell">
           <SectionTitle
             as="h1"
-            eyebrow="Contact"
-            title="Let's build something meaningful."
-            description="Tell us about the problem you're trying to solve. We'll get back to you with real thoughts, not a sales script."
+            eyebrow={t('contact.heroEyebrow')}
+            title={t('contact.heroTitle')}
+            description={t('contact.heroDescription')}
             className="max-w-3xl"
           />
 
@@ -56,12 +45,9 @@ export default function Contact() {
                 <div className="relative flex flex-col gap-8">
                   <div className="flex flex-col gap-3">
                     <h2 className="text-balance font-display text-2xl font-semibold tracking-tight text-white">
-                      Tell us what you&rsquo;re building.
+                      {t('contact.sideTitle')}
                     </h2>
-                    <p className="text-sm leading-relaxed text-muted-inverse">
-                      Not sure where your project fits? These are the kinds of work we take on
-                      most often.
-                    </p>
+                    <p className="text-sm leading-relaxed text-muted-inverse">{t('contact.sideDescription')}</p>
                   </div>
 
                   <div className="flex flex-wrap gap-2">
@@ -96,7 +82,7 @@ export default function Contact() {
                       <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/5 text-primary">
                         <MapPin size={15} />
                       </span>
-                      <span className="text-white/90">{company.location}</span>
+                      <span className="text-white/90">{t('company.location')}</span>
                     </li>
                   </ul>
                 </div>
@@ -106,6 +92,8 @@ export default function Contact() {
                     <a
                       key={s.label}
                       href={s.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="group inline-flex items-center gap-1 text-xs font-medium text-white/70 transition-colors hover:text-white"
                     >
                       {s.label}

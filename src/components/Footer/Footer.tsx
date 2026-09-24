@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
 import Logo from '@/components/Logo/Logo'
+import { Link } from '@/i18n/LocalizedLink'
 import { company, navLinks } from '@/data/nav'
 import { services } from '@/data/services'
 
 export default function Footer() {
+  const { t } = useTranslation()
   const year = new Date().getFullYear()
 
   return (
@@ -22,15 +24,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.3fr_0.8fr_0.8fr_1fr]">
           <div className="flex flex-col gap-5">
             <Logo variant="full" plate className="h-11 w-auto" />
-            <p className="max-w-xs text-sm leading-relaxed text-muted">
-              We design and build custom software, digital products, and technology platforms
-              for businesses that want to move faster and operate smarter.
-            </p>
+            <p className="max-w-xs text-sm leading-relaxed text-muted">{t('footer.description')}</p>
             <div className="flex items-center gap-3 pt-2">
               {company.social.map((s) => (
                 <a
                   key={s.label}
                   href={s.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex h-9 items-center rounded-full border border-border px-4 text-xs font-medium text-muted transition-colors duration-300 hover:border-border-strong hover:text-text"
                 >
                   {s.label}
@@ -41,7 +42,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
-              Navigation
+              {t('footer.navigation')}
             </span>
             <ul className="flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -50,7 +51,7 @@ export default function Footer() {
                     to={link.path}
                     className="link-underline text-sm text-muted transition-colors hover:text-text"
                   >
-                    {link.label}
+                    {t(`nav.${link.key}`)}
                   </Link>
                 </li>
               ))}
@@ -59,7 +60,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
-              Services
+              {t('footer.services')}
             </span>
             <ul className="flex flex-col gap-3">
               {services.slice(0, 5).map((s) => (
@@ -68,7 +69,7 @@ export default function Footer() {
                     to="/services"
                     className="link-underline text-sm text-muted transition-colors hover:text-text"
                   >
-                    {s.title}
+                    {t(`services.items.${s.slug}.title`)}
                   </Link>
                 </li>
               ))}
@@ -77,7 +78,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-4">
             <span className="text-xs font-semibold uppercase tracking-[0.18em] text-muted">
-              Get in touch
+              {t('footer.getInTouch')}
             </span>
             <ul className="flex flex-col gap-3 text-sm text-muted">
               <li className="flex items-center gap-2.5">
@@ -94,14 +95,14 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin size={15} className="mt-0.5 shrink-0 text-primary" />
-                <span>{company.location}</span>
+                <span>{t('company.location')}</span>
               </li>
             </ul>
             <Link
               to="/contact"
               className="group mt-2 inline-flex w-fit items-center gap-1.5 text-sm font-semibold text-text"
             >
-              Start a project
+              {t('footer.startProject')}
               <ArrowUpRight
                 size={15}
                 className="transition-transform duration-300 ease-premium group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -112,9 +113,9 @@ export default function Footer() {
 
         <div className="mt-16 flex flex-col gap-4 border-t border-border pt-8 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
           <span>
-            &copy; {year} {company.name}. All rights reserved.
+            &copy; {year} {company.name}. {t('footer.rights')}
           </span>
-          <span>Designed &amp; engineered with precision.</span>
+          <span>{t('footer.designed')}</span>
         </div>
       </div>
     </footer>

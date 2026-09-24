@@ -1,0 +1,357 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "solutions": "Solutions",
+    "about": "About",
+    "contact": "Contact",
+    "letsTalk": "Let's Talk"
+  },
+  "company": {
+    "tagline": "Building technology that moves businesses forward.",
+    "location": "Remote-first, working with clients worldwide"
+  },
+  "footer": {
+    "description": "We design and build custom software, digital products, and technology platforms for businesses that want to move faster and operate smarter.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "getInTouch": "Get in touch",
+    "startProject": "Start a project",
+    "rights": "All rights reserved.",
+    "designed": "Designed & engineered with precision."
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "startAConversation": "Start a Conversation",
+    "startAProject": "Start a Project",
+    "startAProjectEyebrow": "START A PROJECT",
+    "exploreServices": "Explore Services",
+    "viewAllServices": "View all services",
+    "learnAboutApproach": "Learn about our approach",
+    "exploreSolutions": "Explore Solutions",
+    "viewSolutions": "View Solutions",
+    "seeServices": "See our Services",
+    "all": "All"
+  },
+  "heroVisual": {
+    "deployments": "Deployments",
+    "allSystemsLive": "All systems live",
+    "cloudSynced": "Cloud synced"
+  },
+  "solutionCard": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "result": "Result"
+  },
+  "home": {
+    "seo": {
+      "title": "Software Development & Digital Solutions",
+      "description": "D&Z Technologies designs and builds custom software, web applications, mobile apps, SaaS platforms and automation systems that move businesses forward."
+    },
+    "eyebrow": "Software · Technology · Innovation",
+    "heroTitle": "Building technology that moves businesses forward.",
+    "heroDescription": "We design and develop custom software, digital products, web and mobile applications, SaaS platforms, and automation systems - engineered to help businesses operate smarter and grow faster.",
+    "valueStrip": ["Custom Software", "Web Applications", "Mobile Apps", "SaaS Platforms", "Automation", "AI Solutions"],
+    "servicesEyebrow": "What we do",
+    "servicesTitle": "Technology built around your business.",
+    "servicesDescription": "From custom platforms to mobile experiences, we build software that fits the way your business actually operates.",
+    "processEyebrow": "How we work",
+    "processTitle": "From idea to scalable product.",
+    "processDescription": "A clear, structured process that takes your business challenge from first conversation to a product running in production.",
+    "processSteps": [
+      { "number": "01", "title": "Discover", "description": "We start by understanding your business, your users, and the problem worth solving." },
+      { "number": "02", "title": "Design", "description": "We map the product experience and technical architecture before a line of code is written." },
+      { "number": "03", "title": "Build", "description": "We develop in focused iterations, with visibility into progress at every stage." },
+      { "number": "04", "title": "Launch", "description": "We ship carefully, with testing and monitoring built into the release process." },
+      { "number": "05", "title": "Scale", "description": "We support and evolve the product as your usage and requirements grow." }
+    ],
+    "techEyebrow": "Technology ecosystem",
+    "techTitle": "Powered by a modern, proven stack.",
+    "techDescription": "We choose technology deliberately — proven where reliability matters, modern where it creates an advantage. Hover a node to explore.",
+    "ctaTitle": "Have an idea worth building?",
+    "ctaDescription": "Let's turn your business challenge into a digital product."
+  },
+  "services": {
+    "seo": {
+      "title": "Software Development Services",
+      "description": "Custom software, web, mobile, SaaS, automation, AI and integration services engineered for real business needs."
+    },
+    "heroEyebrow": "Services",
+    "heroTitle": "Technology services designed for real business needs.",
+    "heroDescription": "We cover the full lifecycle of software development — from the first line of code to the systems that keep your product running. Every engagement is scoped around a concrete business outcome, not a generic package.",
+    "technologiesLabel": "Technologies",
+    "useCasesLabel": "Common use cases",
+    "crossLinkEyebrow": "Looking for a business outcome instead?",
+    "crossLinkTitle": "See how these services translate into real business solutions.",
+    "ctaTitle": "Not sure which service fits?",
+    "ctaDescription": "Tell us about your project and we'll help you find the right approach.",
+    "items": {
+      "custom-software": {
+        "title": "Custom Software Development",
+        "short": "Software engineered around your exact processes, not the other way around.",
+        "description": "We design and build bespoke software systems tailored to how your business actually operates — replacing rigid off-the-shelf tools with solutions that fit your workflows, your data, and your growth plans.",
+        "benefits": [
+          "Built around your real workflows instead of forcing you to adapt",
+          "Full ownership of the codebase and architecture",
+          "Scales alongside your team and your data",
+          "No licensing lock-in or per-seat pricing surprises"
+        ],
+        "useCases": ["Internal operations platforms", "Legacy system modernization", "Data-intensive line-of-business tools"]
+      },
+      "web-development": {
+        "title": "Web Development",
+        "short": "Fast, accessible, beautifully engineered web applications.",
+        "description": "From marketing sites to complex web applications, we build performant front ends and resilient back ends using modern frameworks — engineered for speed, SEO, and long-term maintainability.",
+        "benefits": [
+          "Sub-second load times and strong Core Web Vitals",
+          "Responsive, accessible interfaces by default",
+          "Component architecture built for reuse and scale",
+          "SEO-friendly foundations from day one"
+        ],
+        "useCases": ["Corporate & product websites", "Client portals", "Progressive web apps"]
+      },
+      "mobile-development": {
+        "title": "Mobile Application Development",
+        "short": "Native-feeling apps for iOS and Android from a single codebase.",
+        "description": "We design and develop cross-platform mobile applications that feel native, perform reliably, and connect seamlessly to your existing systems and APIs.",
+        "benefits": [
+          "One codebase for iOS and Android reduces cost and time to market",
+          "Native performance and platform-appropriate UX",
+          "Offline-first architecture where it matters",
+          "Seamless integration with existing backends"
+        ],
+        "useCases": ["Customer-facing apps", "Field service & logistics apps", "Internal mobile tools"]
+      },
+      "saas-development": {
+        "title": "SaaS Development",
+        "short": "Multi-tenant platforms built to launch, scale, and evolve.",
+        "description": "We architect and build SaaS products end to end — from multi-tenant data models and billing to onboarding flows and admin tooling — designed to scale as your customer base grows.",
+        "benefits": [
+          "Multi-tenant architecture designed for scale from day one",
+          "Subscription billing and usage metering built in",
+          "Clear separation between product core and customer configuration",
+          "Analytics and admin tooling for your internal teams"
+        ],
+        "useCases": ["B2B SaaS platforms", "Vertical software products", "Internal tools turned products"]
+      },
+      "business-automation": {
+        "title": "Business Automation",
+        "short": "Remove manual work from the processes that slow your team down.",
+        "description": "We identify repetitive, error-prone manual processes and replace them with reliable automated workflows connected directly to the systems your team already uses.",
+        "benefits": [
+          "Fewer manual errors and less repetitive work",
+          "Faster turnaround on operational processes",
+          "Automations that plug into your existing tools",
+          "Clear audit trails for every automated action"
+        ],
+        "useCases": ["Document & data processing", "Approval workflows", "Reporting pipelines"]
+      },
+      "ai-solutions": {
+        "title": "AI & Data Solutions",
+        "short": "Practical AI features grounded in your data, not hype.",
+        "description": "We help businesses apply AI where it creates real value — intelligent search, classification, summarization, and decision support — built on solid data foundations.",
+        "benefits": [
+          "AI features scoped to measurable business outcomes",
+          "Built on your own data, securely handled",
+          "Human-in-the-loop design where accuracy matters",
+          "Clear monitoring of model performance over time"
+        ],
+        "useCases": ["Intelligent document processing", "Search & recommendations", "Internal copilots"]
+      },
+      "system-integrations": {
+        "title": "API & System Integrations",
+        "short": "Make your systems talk to each other reliably.",
+        "description": "We connect the tools your business already relies on — CRMs, ERPs, payment providers, internal databases — through robust, well-documented integrations that keep data consistent everywhere.",
+        "benefits": [
+          "Single source of truth across disconnected systems",
+          "Reliable, monitored data synchronization",
+          "Documented APIs your team can build on",
+          "Reduced manual data entry between platforms"
+        ],
+        "useCases": ["CRM ↔ ERP synchronization", "Payment & billing integrations", "Data warehousing"]
+      },
+      "business-systems": {
+        "title": "Business Systems",
+        "short": "Purpose-built platforms for how your organization runs.",
+        "description": "From internal dashboards to full operational platforms, we build the systems that support day-to-day decision making — combining data, workflow, and reporting in one place.",
+        "benefits": [
+          "Centralized visibility across departments",
+          "Custom dashboards for real-time decision making",
+          "Role-based access built around your org structure",
+          "Designed to grow with new business units"
+        ],
+        "useCases": ["Management dashboards", "Operational platforms", "Reporting & analytics systems"]
+      }
+    }
+  },
+  "solutions": {
+    "seo": {
+      "title": "Business Technology Solutions",
+      "description": "Digital solutions built around the way your business works — from CRM and ERP to e-commerce, dashboards, and AI-powered business tools."
+    },
+    "heroEyebrow": "Solutions",
+    "heroTitle": "Digital solutions built around the way your business works.",
+    "heroDescription": "We don't start with technology — we start with how your business actually runs. Every solution below is a category of problem we help solve, adapted to your specific operation.",
+    "industriesEyebrow": "Industries",
+    "industriesTitle": "Built for different industries.",
+    "industriesDescription": "The same engineering discipline, applied to the specific realities of your sector.",
+    "ctaTitle": "Have a business problem, not a tech spec?",
+    "ctaDescription": "Tell us how your business runs today — we'll help you figure out what to build.",
+    "items": {
+      "business-management": {
+        "title": "Business Management Systems",
+        "category": "Operations",
+        "problem": "Teams tracking operations across spreadsheets, emails, and disconnected tools.",
+        "solution": "A centralized platform tailored to your processes, roles, and reporting needs.",
+        "result": "One source of truth, fewer errors, and faster day-to-day decisions."
+      },
+      "crm": {
+        "title": "CRM Platforms",
+        "category": "Sales & Customer",
+        "problem": "Customer data scattered across inboxes, sheets, and generic tools that don’t fit your sales process.",
+        "solution": "A CRM built around your actual pipeline, customer lifecycle, and team structure.",
+        "result": "A clear view of every relationship and a sales process your team actually follows."
+      },
+      "erp": {
+        "title": "ERP Systems",
+        "category": "Operations",
+        "problem": "Finance, inventory, and operations running on disconnected legacy systems.",
+        "solution": "A unified ERP core connecting operations, finance, and reporting in real time.",
+        "result": "Consistent data across departments and dramatically less manual reconciliation."
+      },
+      "pos": {
+        "title": "Point of Sale (POS)",
+        "category": "Retail",
+        "problem": "In-store and online sales tracked separately, with no unified inventory view.",
+        "solution": "A modern POS system connected directly to inventory, reporting, and online channels.",
+        "result": "Accurate stock levels, faster checkout, and unified sales visibility."
+      },
+      "inventory-management": {
+        "title": "Inventory Management",
+        "category": "Operations",
+        "problem": "Stock discrepancies, manual counts, and limited visibility across locations.",
+        "solution": "A real-time inventory system with automated tracking and multi-location support.",
+        "result": "Fewer stockouts, less overstocking, and reliable numbers your team can trust."
+      },
+      "ecommerce": {
+        "title": "E-commerce Platforms",
+        "category": "Retail",
+        "problem": "Generic storefronts that can’t support your catalog, pricing, or fulfillment logic.",
+        "solution": "A tailored e-commerce experience built around your products and operations.",
+        "result": "A storefront that scales with demand and reflects your brand precisely."
+      },
+      "saas-platforms": {
+        "title": "SaaS Platforms",
+        "category": "Product",
+        "problem": "An internal tool or idea with real product potential, but no clear path to market.",
+        "solution": "A production-grade, multi-tenant SaaS platform built for real customers.",
+        "result": "A product ready to onboard, bill, and support paying customers."
+      },
+      "dashboards-analytics": {
+        "title": "Dashboards & Analytics",
+        "category": "Data",
+        "problem": "Decisions made on gut feeling because data lives in too many places.",
+        "solution": "Centralized dashboards that turn operational data into clear, real-time insight.",
+        "result": "Faster, more confident decisions backed by live data."
+      },
+      "ai-business-tools": {
+        "title": "AI-Powered Business Tools",
+        "category": "Automation",
+        "problem": "High-volume manual tasks like document review, tagging, or support triage.",
+        "solution": "AI-assisted tools that handle repetitive cognitive work with human oversight.",
+        "result": "More output from the same team, with quality checks built in."
+      }
+    },
+    "industries": {
+      "retail": "Retail",
+      "professional-services": "Professional Services",
+      "real-estate": "Real Estate",
+      "automotive": "Automotive",
+      "healthcare": "Healthcare",
+      "education": "Education",
+      "logistics": "Logistics",
+      "technology-saas": "Technology & SaaS"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "About D&Z Technologies",
+      "description": "Who we are, what we believe, and how D&Z Technologies approaches custom software development."
+    },
+    "heroEyebrow": "About us",
+    "heroTitle": "Technology with purpose.",
+    "heroDescription": "D&Z Technologies is a software development company built around a simple idea: technology should make a business measurably better — not just look impressive. Everything we build is judged against that standard.",
+    "blocks": [
+      { "title": "Who we are", "body": "A software development team focused on building custom digital products — web platforms, mobile apps, SaaS products, and the systems that run behind them." },
+      { "title": "What we believe", "body": "Good software is judged by outcomes, not aesthetics alone. We believe in clear communication, sound architecture, and building things that are genuinely maintainable." },
+      { "title": "How we work", "body": "Close collaboration, iterative delivery, and honest technical judgment — even when it means recommending a simpler solution than the one originally requested." }
+    ],
+    "approachEyebrow": "Our approach",
+    "approachTitle": "What makes our process different.",
+    "approachDescription": "A methodical, five-stage approach that keeps engineering decisions grounded in your actual business needs from day one through to launch and beyond.",
+    "approachSteps": [
+      { "number": "01", "title": "Understand", "description": "We start by learning your business, your users, and the real constraints behind the request — not just the feature list." },
+      { "number": "02", "title": "Strategize", "description": "We define the right scope and technical direction before committing to a build, so effort goes where it matters." },
+      { "number": "03", "title": "Design", "description": "We shape the experience and the architecture together, so the product is coherent from the interface down to the data model." },
+      { "number": "04", "title": "Develop", "description": "We build in focused, visible iterations — with working software you can see and react to throughout." },
+      { "number": "05", "title": "Improve", "description": "We treat launch as a starting point. We monitor, listen, and keep refining as real usage reveals what matters." }
+    ],
+    "valuesEyebrow": "Values",
+    "valuesTitle": "What we hold ourselves to.",
+    "values": [
+      { "title": "Innovation", "description": "We stay close to modern tools and techniques, and apply them only where they genuinely improve the outcome." },
+      { "title": "Quality", "description": "We treat code quality, testing, and reliability as part of the deliverable — not an afterthought." },
+      { "title": "Transparency", "description": "You should always know what’s being built, why, and where things stand. No black boxes." },
+      { "title": "Collaboration", "description": "The best software comes from a real partnership between your team’s knowledge and our engineering." },
+      { "title": "Scalability", "description": "We design systems to handle the business you’re building toward, not just the one you have today." }
+    ],
+    "ctaTitle": "Want to know if we're the right fit?",
+    "ctaDescription": "The best way to find out is a conversation about what you're building."
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact",
+      "description": "Tell us about your project. D&Z Technologies would love to help you turn it into working software."
+    },
+    "heroEyebrow": "Contact",
+    "heroTitle": "Let's build something meaningful.",
+    "heroDescription": "Tell us about the problem you're trying to solve. We'll get back to you with real thoughts, not a sales script.",
+    "sideTitle": "Tell us what you're building.",
+    "sideDescription": "Not sure where your project fits? These are the kinds of work we take on most often.",
+    "categories": ["Custom Software", "Web Application", "Mobile App", "SaaS Platform", "Automation", "AI Solution", "Integration", "Something else"]
+  },
+  "contactForm": {
+    "nameLabel": "Name",
+    "companyLabel": "Company",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "projectTypeLabel": "Project type",
+    "budgetLabel": "Estimated budget",
+    "messageLabel": "Message",
+    "namePlaceholder": "Jane Cooper",
+    "companyPlaceholder": "Company name",
+    "emailPlaceholder": "jane@company.com",
+    "phonePlaceholder": "+1 (555) 000-0000",
+    "messagePlaceholder": "Tell us what you're building, the problem you're solving, and any timelines you have in mind.",
+    "selectProjectType": "Select a project type",
+    "selectRange": "Select a range",
+    "projectTypes": ["Custom Software", "Web Application", "Mobile App", "SaaS Platform", "Automation", "AI Solution", "Other"],
+    "budgets": ["Under $1k", "$1k – $3k", "$3k – $5k", "$5k – $10k", "$10k+", "Not sure yet"],
+    "successTitle": "Inquiry sent.",
+    "successDescription": "Thanks for reaching out — we've received your project details and will get back to you shortly.",
+    "sendAnother": "Send another inquiry",
+    "errorMessage": "Something went wrong sending your inquiry. Please try again.",
+    "sending": "Sending inquiry…",
+    "submit": "Send Project Inquiry",
+    "errors": {
+      "nameRequired": "Please tell us your name.",
+      "nameShort": "Name looks too short.",
+      "emailRequired": "Please add an email address.",
+      "emailInvalid": "That email address doesn’t look valid.",
+      "phoneInvalid": "That phone number doesn’t look valid.",
+      "projectTypeRequired": "Select the type of project.",
+      "messageRequired": "Tell us a little about what you need.",
+      "messageShort": "Please add a bit more detail (20+ characters)."
+    }
+  }
+}

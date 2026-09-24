@@ -12,33 +12,36 @@ export type ContactFormErrors = Partial<Record<keyof ContactFormValues, string>>
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
-export function validateContactForm(values: ContactFormValues): ContactFormErrors {
+export function validateContactForm(
+  values: ContactFormValues,
+  t: (key: string) => string,
+): ContactFormErrors {
   const errors: ContactFormErrors = {}
 
   if (!values.name.trim()) {
-    errors.name = 'Please tell us your name.'
+    errors.name = t('contactForm.errors.nameRequired')
   } else if (values.name.trim().length < 2) {
-    errors.name = 'Name looks too short.'
+    errors.name = t('contactForm.errors.nameShort')
   }
 
   if (!values.email.trim()) {
-    errors.email = 'Please add an email address.'
+    errors.email = t('contactForm.errors.emailRequired')
   } else if (!emailPattern.test(values.email.trim())) {
-    errors.email = 'That email address doesn’t look valid.'
+    errors.email = t('contactForm.errors.emailInvalid')
   }
 
   if (values.phone.trim() && !/^[+()\-\s\d]{7,}$/.test(values.phone.trim())) {
-    errors.phone = 'That phone number doesn’t look valid.'
+    errors.phone = t('contactForm.errors.phoneInvalid')
   }
 
   if (!values.projectType) {
-    errors.projectType = 'Select the type of project.'
+    errors.projectType = t('contactForm.errors.projectTypeRequired')
   }
 
   if (!values.message.trim()) {
-    errors.message = 'Tell us a little about what you need.'
+    errors.message = t('contactForm.errors.messageRequired')
   } else if (values.message.trim().length < 20) {
-    errors.message = 'Please add a bit more detail (20+ characters).'
+    errors.message = t('contactForm.errors.messageShort')
   }
 
   return errors

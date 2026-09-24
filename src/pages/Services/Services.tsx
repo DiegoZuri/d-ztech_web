@@ -1,5 +1,6 @@
 import type { LucideIcon } from 'lucide-react'
 import { Check } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Seo from '@/components/Seo/Seo'
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import CTA from '@/components/CTA/CTA'
@@ -30,22 +31,20 @@ function ServiceVisual({ icon: Icon, index }: { icon: LucideIcon; index: number 
 }
 
 export default function Services() {
+  const { t } = useTranslation()
+
   return (
     <>
-      <Seo
-        title="Software Development Services"
-        description="Custom software, web, mobile, SaaS, automation, AI and integration services engineered for real business needs."
-        path="/services"
-      />
+      <Seo title={t('services.seo.title')} description={t('services.seo.description')} path="/services" />
 
       {/* ================= HERO ================= */}
       <section className="relative overflow-hidden pb-16 pt-40 sm:pt-48">
         <div className="shell">
           <SectionTitle
             as="h1"
-            eyebrow="Services"
-            title="Technology services designed for real business needs."
-            description="We cover the full lifecycle of software development — from the first line of code to the systems that keep your product running. Every engagement is scoped around a concrete business outcome, not a generic package."
+            eyebrow={t('services.heroEyebrow')}
+            title={t('services.heroTitle')}
+            description={t('services.heroDescription')}
             className="max-w-3xl"
           />
         </div>
@@ -58,7 +57,7 @@ export default function Services() {
             {services.map((s) => (
               <StaggerItem key={s.slug}>
                 <a href={`#${s.slug}`} className="link-underline text-sm font-medium text-muted hover:text-text">
-                  {s.title}
+                  {t(`services.items.${s.slug}.title`)}
                 </a>
               </StaggerItem>
             ))}
@@ -71,6 +70,8 @@ export default function Services() {
         <div className="shell flex flex-col">
           {services.map((service, i) => {
             const reversed = i % 2 === 1
+            const benefits = t(`services.items.${service.slug}.benefits`, { returnObjects: true }) as string[]
+            const useCases = t(`services.items.${service.slug}.useCases`, { returnObjects: true }) as string[]
             return (
               <div
                 id={service.slug}
@@ -92,12 +93,14 @@ export default function Services() {
                       <service.icon size={22} strokeWidth={1.75} />
                     </div>
                     <h2 className="text-balance font-display text-2xl font-semibold tracking-tight text-text sm:text-[28px]">
-                      {service.title}
+                      {t(`services.items.${service.slug}.title`)}
                     </h2>
-                    <p className="text-balance text-base leading-relaxed text-muted">{service.description}</p>
+                    <p className="text-balance text-base leading-relaxed text-muted">
+                      {t(`services.items.${service.slug}.description`)}
+                    </p>
 
                     <ul className="flex flex-col gap-2.5">
-                      {service.benefits.map((b) => (
+                      {benefits.map((b) => (
                         <li key={b} className="flex items-start gap-2.5 text-sm text-text">
                           <Check size={16} className="mt-0.5 shrink-0 text-primary" />
                           <span>{b}</span>
@@ -107,15 +110,15 @@ export default function Services() {
 
                     <div className="flex flex-col gap-3 pt-2">
                       <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-                        Technologies
+                        {t('services.technologiesLabel')}
                       </span>
                       <div className="flex flex-wrap gap-2">
-                        {service.technologies.map((t) => (
+                        {service.technologies.map((tech) => (
                           <span
-                            key={t}
+                            key={tech}
                             className="rounded-full border border-border px-3 py-1.5 text-xs font-medium text-muted"
                           >
-                            {t}
+                            {tech}
                           </span>
                         ))}
                       </div>
@@ -123,10 +126,10 @@ export default function Services() {
 
                     <div className="flex flex-col gap-3">
                       <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">
-                        Common use cases
+                        {t('services.useCasesLabel')}
                       </span>
                       <div className="flex flex-wrap gap-2">
-                        {service.useCases.map((u) => (
+                        {useCases.map((u) => (
                           <span
                             key={u}
                             className="rounded-full bg-bg-alt px-3 py-1.5 text-xs font-medium text-text"
@@ -148,22 +151,18 @@ export default function Services() {
       <section className="border-t border-border bg-bg-alt py-20 sm:py-24">
         <div className="shell flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-center">
           <div className="flex max-w-lg flex-col gap-3">
-            <span className="eyebrow">Looking for a business outcome instead?</span>
+            <span className="eyebrow">{t('services.crossLinkEyebrow')}</span>
             <h2 className="text-balance font-display text-2xl font-semibold tracking-tight text-text sm:text-[28px]">
-              See how these services translate into real business solutions.
+              {t('services.crossLinkTitle')}
             </h2>
           </div>
           <LinkButton to="/solutions" variant="secondary" size="lg" icon className="shrink-0">
-            Explore Solutions
+            {t('common.exploreSolutions')}
           </LinkButton>
         </div>
       </section>
 
-      <CTA
-        title="Not sure which service fits?"
-        description="Tell us about your project and we'll help you find the right approach."
-        primaryLabel="Start a Conversation"
-      />
+      <CTA title={t('services.ctaTitle')} description={t('services.ctaDescription')} />
     </>
   )
 }

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Activity, GitBranch, Cloud, CheckCircle2 } from 'lucide-react'
 
 const nodes = [
@@ -20,6 +21,7 @@ const edges: [number, number][] = [
 ]
 
 export default function HeroVisual() {
+  const { t } = useTranslation()
   return (
     <div className="relative mx-auto aspect-[4/5] w-full max-w-[480px] sm:max-w-[520px]">
       {/* backdrop grid + glow */}
@@ -80,7 +82,7 @@ export default function HeroVisual() {
       >
         <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}>
           <div className="mb-3 flex items-center justify-between">
-            <span className="text-[11px] font-medium text-muted-inverse">Deployments</span>
+            <span className="text-[11px] font-medium text-muted-inverse">{t('heroVisual.deployments')}</span>
             <Activity size={13} className="text-primary" />
           </div>
           <div className="flex items-end gap-1.5">
@@ -113,7 +115,7 @@ export default function HeroVisual() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
-          <span className="text-xs font-medium text-white">All systems live</span>
+          <span className="text-xs font-medium text-white">{t('heroVisual.allSystemsLive')}</span>
         </motion.div>
       </motion.div>
 
@@ -164,7 +166,7 @@ export default function HeroVisual() {
           className="flex items-center gap-1.5"
         >
           <Cloud size={13} className="text-primary" />
-          <span className="text-[11px] font-medium text-white">Cloud synced</span>
+          <span className="text-[11px] font-medium text-white">{t('heroVisual.cloudSynced')}</span>
           <CheckCircle2 size={12} className="text-emerald-400" />
         </motion.div>
       </motion.div>

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import type { LucideIcon } from 'lucide-react'
 import { ArrowRight } from 'lucide-react'
 
@@ -11,6 +12,7 @@ interface SolutionCardProps {
 }
 
 export default function SolutionCard({ icon: Icon, title, category, problem, solution, result }: SolutionCardProps) {
+  const { t } = useTranslation()
   return (
     <div className="group flex flex-col gap-6 rounded-2xl border border-border bg-surface p-7 transition-all duration-400 ease-premium hover:border-border-strong hover:shadow-elevated">
       <div className="flex items-start justify-between gap-4">
@@ -27,7 +29,7 @@ export default function SolutionCard({ icon: Icon, title, category, problem, sol
       <div className="flex flex-col gap-3 border-t border-border pt-5 text-sm">
         <div className="flex items-start gap-3">
           <span className="mt-0.5 w-[72px] shrink-0 text-xs font-semibold uppercase tracking-wide text-muted">
-            Problem
+            {t('solutionCard.problem')}
           </span>
           <p className="text-muted">{problem}</p>
         </div>
@@ -36,7 +38,7 @@ export default function SolutionCard({ icon: Icon, title, category, problem, sol
         </div>
         <div className="flex items-start gap-3">
           <span className="mt-0.5 w-[72px] shrink-0 text-xs font-semibold uppercase tracking-wide text-muted">
-            Solution
+            {t('solutionCard.solution')}
           </span>
           <p className="text-text">{solution}</p>
         </div>
@@ -45,7 +47,7 @@ export default function SolutionCard({ icon: Icon, title, category, problem, sol
         </div>
         <div className="flex items-start gap-3">
           <span className="mt-0.5 w-[72px] shrink-0 text-xs font-semibold uppercase tracking-wide text-muted">
-            Result
+            {t('solutionCard.result')}
           </span>
           <p className="font-medium text-text">{result}</p>
         </div>

@@ -1,22 +1,11 @@
 import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { CheckCircle2, Loader2, AlertCircle, Send } from 'lucide-react'
 import { validateContactForm } from '@/utils/validation'
 import type { ContactFormErrors, ContactFormValues } from '@/utils/validation'
 import { submitContactForm } from '@/utils/api'
-
-const projectTypes = [
-  'Custom Software',
-  'Web Application',
-  'Mobile App',
-  'SaaS Platform',
-  'Automation',
-  'AI Solution',
-  'Other',
-]
-
-const budgets = ['Under $1k', '$1k – $3k', '$3k – $5k', '$5k – $10k', '$10k+', 'Not sure yet']
 
 const initialValues: ContactFormValues = {
   name: '',
@@ -39,6 +28,10 @@ function fieldClasses(hasError?: string) {
 }
 
 export default function ContactForm() {
+  const { t } = useTranslation()
+  const projectTypes = t('contactForm.projectTypes', { returnObjects: true }) as string[]
+  const budgets = t('contactForm.budgets', { returnObjects: true }) as string[]
+
   const [values, setValues] = useState<ContactFormValues>(initialValues)
   const [errors, setErrors] = useState<ContactFormErrors>({})
   const [status, setStatus] = useState<Status>('idle')
@@ -50,7 +43,7 @@ export default function ContactForm() {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault()
-    const nextErrors = validateContactForm(values)
+    const nextErrors = validateContactForm(values, t)
     setErrors(nextErrors)
 
     if (Object.keys(nextErrors).length > 0) return
@@ -76,17 +69,14 @@ export default function ContactForm() {
         <div className="flex h-14 w-14 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-500">
           <CheckCircle2 size={28} />
         </div>
-        <h2 className="text-xl font-semibold tracking-tight text-text">Inquiry sent.</h2>
-        <p className="max-w-sm text-sm leading-relaxed text-muted">
-          Thanks for reaching out — we&rsquo;ve received your project details and will get back
-          to you shortly.
-        </p>
+        <h2 className="text-xl font-semibold tracking-tight text-text">{t('contactForm.successTitle')}</h2>
+        <p className="max-w-sm text-sm leading-relaxed text-muted">{t('contactForm.successDescription')}</p>
         <button
           type="button"
           onClick={() => setStatus('idle')}
           className="mt-2 text-sm font-semibold text-primary hover:opacity-80"
         >
-          Send another inquiry
+          {t('contactForm.sendAnother')}
         </button>
       </motion.div>
     )
@@ -97,7 +87,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div className="flex flex-col gap-1.5">
           <label htmlFor="name" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Name <span className="text-primary">*</span>
+            {t('contactForm.nameLabel')} <span className="text-primary">*</span>
           </label>
           <input
             id="name"
@@ -108,7 +98,7 @@ export default function ContactForm() {
             className={fieldClasses(errors.name)}
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? 'name-error' : undefined}
-            placeholder="Jane Cooper"
+            placeholder={t('contactForm.namePlaceholder')}
           />
           {errors.name && (
             <span id="name-error" className="text-xs text-red-500">
@@ -119,7 +109,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-1.5">
           <label htmlFor="company" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Company
+            {t('contactForm.companyLabel')}
           </label>
           <input
             id="company"
@@ -128,13 +118,13 @@ export default function ContactForm() {
             value={values.company}
             onChange={(e) => update('company', e.target.value)}
             className={fieldClasses()}
-            placeholder="Company name"
+            placeholder={t('contactForm.companyPlaceholder')}
           />
         </div>
 
         <div className="flex flex-col gap-1.5">
           <label htmlFor="email" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Email <span className="text-primary">*</span>
+            {t('contactForm.emailLabel')} <span className="text-primary">*</span>
           </label>
           <input
             id="email"
@@ -145,7 +135,7 @@ export default function ContactForm() {
             className={fieldClasses(errors.email)}
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? 'email-error' : undefined}
-            placeholder="jane@company.com"
+            placeholder={t('contactForm.emailPlaceholder')}
           />
           {errors.email && (
             <span id="email-error" className="text-xs text-red-500">
@@ -156,7 +146,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-1.5">
           <label htmlFor="phone" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Phone
+            {t('contactForm.phoneLabel')}
           </label>
           <input
             id="phone"
@@ -167,7 +157,7 @@ export default function ContactForm() {
             className={fieldClasses(errors.phone)}
             aria-invalid={!!errors.phone}
             aria-describedby={errors.phone ? 'phone-error' : undefined}
-            placeholder="+1 (555) 000-0000"
+            placeholder={t('contactForm.phonePlaceholder')}
           />
           {errors.phone && (
             <span id="phone-error" className="text-xs text-red-500">
@@ -178,7 +168,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-1.5">
           <label htmlFor="projectType" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Project type <span className="text-primary">*</span>
+            {t('contactForm.projectTypeLabel')} <span className="text-primary">*</span>
           </label>
           <select
             id="projectType"
@@ -188,10 +178,10 @@ export default function ContactForm() {
             aria-invalid={!!errors.projectType}
             aria-describedby={errors.projectType ? 'projectType-error' : undefined}
           >
-            <option value="">Select a project type</option>
-            {projectTypes.map((t) => (
-              <option key={t} value={t}>
-                {t}
+            <option value="">{t('contactForm.selectProjectType')}</option>
+            {projectTypes.map((pt) => (
+              <option key={pt} value={pt}>
+                {pt}
               </option>
             ))}
           </select>
@@ -204,7 +194,7 @@ export default function ContactForm() {
 
         <div className="flex flex-col gap-1.5">
           <label htmlFor="budget" className="text-xs font-semibold uppercase tracking-wide text-muted">
-            Estimated budget
+            {t('contactForm.budgetLabel')}
           </label>
           <select
             id="budget"
@@ -212,7 +202,7 @@ export default function ContactForm() {
             onChange={(e) => update('budget', e.target.value)}
             className={`${fieldClasses()} appearance-none`}
           >
-            <option value="">Select a range</option>
+            <option value="">{t('contactForm.selectRange')}</option>
             {budgets.map((b) => (
               <option key={b} value={b}>
                 {b}
@@ -224,7 +214,7 @@ export default function ContactForm() {
 
       <div className="flex flex-col gap-1.5">
         <label htmlFor="message" className="text-xs font-semibold uppercase tracking-wide text-muted">
-          Message <span className="text-primary">*</span>
+          {t('contactForm.messageLabel')} <span className="text-primary">*</span>
         </label>
         <textarea
           id="message"
@@ -234,7 +224,7 @@ export default function ContactForm() {
           className={`${fieldClasses(errors.message)} resize-none`}
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? 'message-error' : undefined}
-          placeholder="Tell us what you're building, the problem you're solving, and any timelines you have in mind."
+          placeholder={t('contactForm.messagePlaceholder')}
         />
         {errors.message && (
           <span id="message-error" className="text-xs text-red-500">
@@ -252,7 +242,7 @@ export default function ContactForm() {
             className="flex items-center gap-2 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-600"
           >
             <AlertCircle size={16} />
-            Something went wrong sending your inquiry. Please try again.
+            {t('contactForm.errorMessage')}
           </motion.div>
         )}
       </AnimatePresence>
@@ -265,11 +255,11 @@ export default function ContactForm() {
         {status === 'submitting' ? (
           <>
             <Loader2 size={16} className="animate-spin" />
-            Sending inquiry&hellip;
+            {t('contactForm.sending')}
           </>
         ) : (
           <>
-            Send Project Inquiry
+            {t('contactForm.submit')}
             <Send size={15} className="transition-transform duration-300 ease-premium group-hover:translate-x-1" />
           </>
         )}

@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { Link } from '@/i18n/LocalizedLink'
 import { ArrowUpRight } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
@@ -11,6 +12,7 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ icon: Icon, title, description, to = '/services', index = 0 }: ServiceCardProps) {
+  const { t } = useTranslation()
   return (
     <Link
       to={to}
@@ -38,7 +40,7 @@ export default function ServiceCard({ icon: Icon, title, description, to = '/ser
       </div>
 
       <div className="relative mt-8 flex items-center gap-1.5 text-sm font-semibold text-text">
-        Learn more
+        {t('common.learnMore')}
         <ArrowUpRight
           size={15}
           className="transition-transform duration-400 ease-premium group-hover:translate-x-1 group-hover:-translate-y-1"

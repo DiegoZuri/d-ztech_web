@@ -1,26 +1,24 @@
 export interface NavLink {
-  label: string
+  key: 'home' | 'services' | 'solutions' | 'about' | 'contact'
   path: string
 }
 
 export const navLinks: NavLink[] = [
-  { label: 'Home', path: '/' },
-  { label: 'Services', path: '/services' },
-  { label: 'Solutions', path: '/solutions' },
-  { label: 'About', path: '/about' },
-  { label: 'Contact', path: '/contact' },
+  { key: 'home', path: '/' },
+  { key: 'services', path: '/services' },
+  { key: 'solutions', path: '/solutions' },
+  { key: 'about', path: '/about' },
+  { key: 'contact', path: '/contact' },
 ]
 
 export const company = {
   name: 'D&Z Technologies',
   shortName: 'D&Z',
-  tagline: 'Building technology that moves businesses forward.',
-  email: 'hello@dz-technologies.com',
-  phone: '+1 (000) 000-0000',
-  location: 'Remote-first, working with clients worldwide',
+  email: 'diego.zurita2406@gmail.com',
+  phone: '+591 79950444',
   social: [
-    { label: 'LinkedIn', url: '#' },
-    { label: 'GitHub', url: '#' },
-    { label: 'X / Twitter', url: '#' },
+    { label: 'LinkedIn', url: 'https://linkedin.com/in/diegozurita24' },
+    { label: 'GitHub', url: 'https://github.com/DiegoZuri' },
+    { label: 'Portfolio', url: 'https://portfolio-dz-three.vercel.app/' },
   ],
 }

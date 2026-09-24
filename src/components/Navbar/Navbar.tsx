@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink as RouterNavLink, useLocation } from 'react-router-dom'
+import { Link as PlainLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import Logo from '@/components/Logo/Logo'
+import { Link, NavLink as RouterNavLink } from '@/i18n/LocalizedLink'
+import { useLang } from '@/i18n/useLang'
 import { navLinks } from '@/data/nav'
 
 export default function Navbar() {
+  const { t } = useTranslation()
+  const lang = useLang()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const location = useLocation()
@@ -37,6 +42,10 @@ export default function Navbar() {
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [open])
 
+  const otherLang = lang === 'en' ? 'es' : 'en'
+  const restOfPath = location.pathname.split('/').slice(2).join('/')
+  const switchLangPath = `/${otherLang}${restOfPath ? `/${restOfPath}` : ''}`
+
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="shell">
@@ -61,7 +70,7 @@ export default function Navbar() {
               >
                 {({ isActive }) => (
                   <span className="relative">
-                    {link.label}
+                    {t(`nav.${link.key}`)}
                     {isActive && (
                       <motion.span
                         layoutId="nav-active"
@@ -75,12 +84,19 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden items-center lg:flex">
+          <div className="hidden items-center gap-3 lg:flex">
+            <PlainLink
+              to={switchLangPath}
+              className="rounded-full px-3 py-2 text-xs font-semibold uppercase tracking-wide text-muted transition-colors duration-300 hover:text-text"
+              aria-label={otherLang === 'es' ? 'Cambiar a español' : 'Switch to English'}
+            >
+              {otherLang}
+            </PlainLink>
             <Link
               to="/contact"
               className="group inline-flex items-center gap-1.5 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 ease-premium hover:bg-primary"
             >
-              Let&rsquo;s Talk
+              {t('nav.letsTalk')}
               <ArrowUpRight
                 size={15}
                 className="transition-transform duration-300 ease-premium group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -133,7 +149,7 @@ export default function Navbar() {
                         }`
                       }
                     >
-                      {link.label}
+                      {t(`nav.${link.key}`)}
                     </RouterNavLink>
                   </motion.div>
                 ))}
@@ -149,9 +165,15 @@ export default function Navbar() {
                   to="/contact"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-4 text-base font-semibold text-white"
                 >
-                  Let&rsquo;s Talk
+                  {t('nav.letsTalk')}
                   <ArrowUpRight size={18} />
                 </Link>
+                <PlainLink
+                  to={switchLangPath}
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-4 text-base font-semibold text-text"
+                >
+                  {otherLang === 'es' ? 'Español' : 'English'}
+                </PlainLink>
               </motion.div>
 
               <div className="mt-auto flex items-center justify-between border-t border-border py-8">

@@ -1,40 +1,25 @@
 import { Sparkles } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Seo from '@/components/Seo/Seo'
 import { LinkButton } from '@/components/Button/Button'
 import HeroVisual from '@/components/HeroVisual/HeroVisual'
 import SectionTitle from '@/components/SectionTitle/SectionTitle'
 import ServiceCard from '@/components/ServiceCard/ServiceCard'
 import ProcessSteps from '@/components/ProcessSteps/ProcessSteps'
+import type { ProcessStep } from '@/components/ProcessSteps/ProcessSteps'
 import TechnologyGrid from '@/components/TechnologyGrid/TechnologyGrid'
 import CTA from '@/components/CTA/CTA'
 import AnimatedSection, { StaggerGroup, StaggerItem } from '@/components/AnimatedSection/AnimatedSection'
 import { services } from '@/data/services'
 
-const valueStrip = [
-  'Custom Software',
-  'Web Applications',
-  'Mobile Apps',
-  'SaaS Platforms',
-  'Automation',
-  'AI Solutions',
-]
-
-const processSteps = [
-  { number: '01', title: 'Discover', description: 'We start by understanding your business, your users, and the problem worth solving.' },
-  { number: '02', title: 'Design', description: 'We map the product experience and technical architecture before a line of code is written.' },
-  { number: '03', title: 'Build', description: 'We develop in focused iterations, with visibility into progress at every stage.' },
-  { number: '04', title: 'Launch', description: 'We ship carefully, with testing and monitoring built into the release process.' },
-  { number: '05', title: 'Scale', description: 'We support and evolve the product as your usage and requirements grow.' },
-]
-
 export default function Home() {
+  const { t } = useTranslation()
+  const valueStrip = t('home.valueStrip', { returnObjects: true }) as string[]
+  const processSteps = t('home.processSteps', { returnObjects: true }) as ProcessStep[]
+
   return (
     <>
-      <Seo
-        title="Software Development & Digital Solutions"
-        description="D&Z Technologies designs and builds custom software, web applications, mobile apps, SaaS platforms and automation systems that move businesses forward."
-        path="/"
-      />
+      <Seo title={t('home.seo.title')} description={t('home.seo.description')} path="/" />
 
       {/* ================= HERO ================= */}
       <section className="section-dark relative overflow-hidden">
@@ -53,30 +38,28 @@ export default function Home() {
             <AnimatedSection>
               <span className="eyebrow">
                 <Sparkles size={13} />
-                Software &middot; Technology &middot; Innovation
+                {t('home.eyebrow')}
               </span>
             </AnimatedSection>
 
             <AnimatedSection delay={0.08}>
               <h1 className="text-balance font-display text-[42px] font-semibold leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-[64px]">
-                Building technology that moves businesses forward.
+                {t('home.heroTitle')}
               </h1>
             </AnimatedSection>
 
             <AnimatedSection delay={0.16}>
               <p className="text-balance max-w-xl text-base leading-relaxed text-muted-inverse sm:text-lg">
-                We design and develop custom software, digital products, web and mobile
-                applications, SaaS platforms, and automation systems - engineered to help
-                businesses operate smarter and grow faster.
+                {t('home.heroDescription')}
               </p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.24} className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
               <LinkButton to="/contact" variant="primary" size="lg" icon>
-                Start a Project
+                {t('common.startAProject')}
               </LinkButton>
               <LinkButton to="/services" variant="outline-light" size="lg">
-                Explore Services
+                {t('common.exploreServices')}
               </LinkButton>
             </AnimatedSection>
           </div>
@@ -105,13 +88,13 @@ export default function Home() {
         <div className="shell">
           <div className="flex flex-col items-start justify-between gap-8 sm:flex-row sm:items-end">
             <SectionTitle
-              eyebrow="What we do"
-              title="Technology built around your business."
-              description="From custom platforms to mobile experiences, we build software that fits the way your business actually operates."
+              eyebrow={t('home.servicesEyebrow')}
+              title={t('home.servicesTitle')}
+              description={t('home.servicesDescription')}
             />
             <AnimatedSection delay={0.1}>
               <LinkButton to="/services" variant="ghost" icon className="shrink-0">
-                View all services
+                {t('common.viewAllServices')}
               </LinkButton>
             </AnimatedSection>
           </div>
@@ -121,8 +104,8 @@ export default function Home() {
               <AnimatedSection key={service.slug} delay={i * 0.06}>
                 <ServiceCard
                   icon={service.icon}
-                  title={service.title}
-                  description={service.short}
+                  title={t(`services.items.${service.slug}.title`)}
+                  description={t(`services.items.${service.slug}.short`)}
                   index={i}
                 />
               </AnimatedSection>
@@ -136,13 +119,13 @@ export default function Home() {
         <div className="shell grid grid-cols-1 gap-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
           <div className="lg:sticky lg:top-32 lg:self-start">
             <SectionTitle
-              eyebrow="How we work"
-              title="From idea to scalable product."
-              description="A clear, structured process that takes your business challenge from first conversation to a product running in production."
+              eyebrow={t('home.processEyebrow')}
+              title={t('home.processTitle')}
+              description={t('home.processDescription')}
             />
             <AnimatedSection delay={0.15} className="mt-8">
               <LinkButton to="/about" variant="ghost" icon>
-                Learn about our approach
+                {t('common.learnAboutApproach')}
               </LinkButton>
             </AnimatedSection>
           </div>
@@ -156,9 +139,9 @@ export default function Home() {
         <div className="shell">
           <SectionTitle
             align="center"
-            eyebrow="Technology ecosystem"
-            title="Powered by a modern, proven stack."
-            description="We choose technology deliberately — proven where reliability matters, modern where it creates an advantage. Hover a node to explore."
+            eyebrow={t('home.techEyebrow')}
+            title={t('home.techTitle')}
+            description={t('home.techDescription')}
             className="mx-auto"
           />
 
@@ -170,10 +153,9 @@ export default function Home() {
 
       {/* ================= FINAL CTA ================= */}
       <CTA
-        title="Have an idea worth building?"
-        description="Let's turn your business challenge into a digital product."
-        primaryLabel="Start a Conversation"
-        secondaryLabel="View Solutions"
+        title={t('home.ctaTitle')}
+        description={t('home.ctaDescription')}
+        secondaryLabel={t('common.viewSolutions')}
         secondaryTo="/solutions"
       />
     </>

@@ -11,10 +11,7 @@ export function getPreferredLang(): Lang {
     const stored = localStorage.getItem('lang')
     if (isLang(stored ?? undefined)) return stored as Lang
   } catch {
-    // localStorage unavailable (private mode, etc.) — fall through to detection
-  }
-  if (typeof navigator !== 'undefined' && navigator.language?.toLowerCase().startsWith('es')) {
-    return 'es'
+    // localStorage unavailable (private mode, etc.) — fall through to default
   }
   return defaultLang
 }

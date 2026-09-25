@@ -67,7 +67,7 @@
     ],
     "techEyebrow": "Technology ecosystem",
     "techTitle": "Powered by a modern, proven stack.",
-    "techDescription": "We choose technology deliberately — proven where reliability matters, modern where it creates an advantage. Hover a node to explore.",
+    "techDescription": "We choose technology deliberately: proven where reliability matters, modern where it creates an advantage. Hover a node to explore.",
     "ctaTitle": "Have an idea worth building?",
     "ctaDescription": "Let's turn your business challenge into a digital product."
   },
@@ -78,7 +78,7 @@
     },
     "heroEyebrow": "Services",
     "heroTitle": "Technology services designed for real business needs.",
-    "heroDescription": "We cover the full lifecycle of software development — from the first line of code to the systems that keep your product running. Every engagement is scoped around a concrete business outcome, not a generic package.",
+    "heroDescription": "We cover the full lifecycle of software development, from the first line of code to the systems that keep your product running. Every engagement is scoped around a concrete business outcome, not a generic package.",
     "technologiesLabel": "Technologies",
     "useCasesLabel": "Common use cases",
     "crossLinkEyebrow": "Looking for a business outcome instead?",
@@ -89,7 +89,7 @@
       "custom-software": {
         "title": "Custom Software Development",
         "short": "Software engineered around your exact processes, not the other way around.",
-        "description": "We design and build bespoke software systems tailored to how your business actually operates — replacing rigid off-the-shelf tools with solutions that fit your workflows, your data, and your growth plans.",
+        "description": "We design and build bespoke software systems tailored to how your business actually operates, replacing rigid off-the-shelf tools with solutions that fit your workflows, your data, and your growth plans.",
         "benefits": [
           "Built around your real workflows instead of forcing you to adapt",
           "Full ownership of the codebase and architecture",
@@ -101,7 +101,7 @@
       "web-development": {
         "title": "Web Development",
         "short": "Fast, accessible, beautifully engineered web applications.",
-        "description": "From marketing sites to complex web applications, we build performant front ends and resilient back ends using modern frameworks — engineered for speed, SEO, and long-term maintainability.",
+        "description": "From marketing sites to complex web applications, we build performant front ends and resilient back ends using modern frameworks, engineered for speed, SEO, and long-term maintainability.",
         "benefits": [
           "Sub-second load times and strong Core Web Vitals",
           "Responsive, accessible interfaces by default",
@@ -125,7 +125,7 @@
       "saas-development": {
         "title": "SaaS Development",
         "short": "Multi-tenant platforms built to launch, scale, and evolve.",
-        "description": "We architect and build SaaS products end to end — from multi-tenant data models and billing to onboarding flows and admin tooling — designed to scale as your customer base grows.",
+        "description": "We architect and build SaaS products end to end, from multi-tenant data models and billing to onboarding flows and admin tooling, designed to scale as your customer base grows.",
         "benefits": [
           "Multi-tenant architecture designed for scale from day one",
           "Subscription billing and usage metering built in",
@@ -149,7 +149,7 @@
       "ai-solutions": {
         "title": "AI & Data Solutions",
         "short": "Practical AI features grounded in your data, not hype.",
-        "description": "We help businesses apply AI where it creates real value — intelligent search, classification, summarization, and decision support — built on solid data foundations.",
+        "description": "We help businesses apply AI where it creates real value: intelligent search, classification, summarization, and decision support, built on solid data foundations.",
         "benefits": [
           "AI features scoped to measurable business outcomes",
           "Built on your own data, securely handled",
@@ -161,7 +161,7 @@
       "system-integrations": {
         "title": "API & System Integrations",
         "short": "Make your systems talk to each other reliably.",
-        "description": "We connect the tools your business already relies on — CRMs, ERPs, payment providers, internal databases — through robust, well-documented integrations that keep data consistent everywhere.",
+        "description": "We connect the tools your business already relies on (CRMs, ERPs, payment providers, internal databases) through robust, well-documented integrations that keep data consistent everywhere.",
         "benefits": [
           "Single source of truth across disconnected systems",
           "Reliable, monitored data synchronization",
@@ -173,7 +173,7 @@
       "business-systems": {
         "title": "Business Systems",
         "short": "Purpose-built platforms for how your organization runs.",
-        "description": "From internal dashboards to full operational platforms, we build the systems that support day-to-day decision making — combining data, workflow, and reporting in one place.",
+        "description": "From internal dashboards to full operational platforms, we build the systems that support day-to-day decision making, combining data, workflow, and reporting in one place.",
         "benefits": [
           "Centralized visibility across departments",
           "Custom dashboards for real-time decision making",
@@ -187,16 +187,16 @@
   "solutions": {
     "seo": {
       "title": "Business Technology Solutions",
-      "description": "Digital solutions built around the way your business works — from CRM and ERP to e-commerce, dashboards, and AI-powered business tools."
+      "description": "Digital solutions built around the way your business works: from CRM and ERP to e-commerce, dashboards, and AI-powered business tools."
     },
     "heroEyebrow": "Solutions",
     "heroTitle": "Digital solutions built around the way your business works.",
-    "heroDescription": "We don't start with technology — we start with how your business actually runs. Every solution below is a category of problem we help solve, adapted to your specific operation.",
+    "heroDescription": "We don't start with technology. We start with how your business actually runs. Every solution below is a category of problem we help solve, adapted to your specific operation.",
     "industriesEyebrow": "Industries",
     "industriesTitle": "Built for different industries.",
     "industriesDescription": "The same engineering discipline, applied to the specific realities of your sector.",
     "ctaTitle": "Have a business problem, not a tech spec?",
-    "ctaDescription": "Tell us how your business runs today — we'll help you figure out what to build.",
+    "ctaDescription": "Tell us how your business runs today, and we'll help you figure out what to build.",
     "items": {
       "business-management": {
         "title": "Business Management Systems",
@@ -280,27 +280,27 @@
     },
     "heroEyebrow": "About us",
     "heroTitle": "Technology with purpose.",
-    "heroDescription": "D&Z Technologies is a software development company built around a simple idea: technology should make a business measurably better — not just look impressive. Everything we build is judged against that standard.",
+    "heroDescription": "D&Z Technologies is a software development company built around a simple idea: technology should make a business measurably better, not just look impressive. Everything we build is judged against that standard.",
     "blocks": [
-      { "title": "Who we are", "body": "A software development team focused on building custom digital products — web platforms, mobile apps, SaaS products, and the systems that run behind them." },
+      { "title": "Who we are", "body": "A software development team focused on building custom digital products: web platforms, mobile apps, SaaS products, and the systems that run behind them." },
       { "title": "What we believe", "body": "Good software is judged by outcomes, not aesthetics alone. We believe in clear communication, sound architecture, and building things that are genuinely maintainable." },
-      { "title": "How we work", "body": "Close collaboration, iterative delivery, and honest technical judgment — even when it means recommending a simpler solution than the one originally requested." }
+      { "title": "How we work", "body": "Close collaboration, iterative delivery, and honest technical judgment, even when it means recommending a simpler solution than the one originally requested." }
     ],
     "approachEyebrow": "Our approach",
     "approachTitle": "What makes our process different.",
     "approachDescription": "A methodical, five-stage approach that keeps engineering decisions grounded in your actual business needs from day one through to launch and beyond.",
     "approachSteps": [
-      { "number": "01", "title": "Understand", "description": "We start by learning your business, your users, and the real constraints behind the request — not just the feature list." },
+      { "number": "01", "title": "Understand", "description": "We start by learning your business, your users, and the real constraints behind the request, not just the feature list." },
       { "number": "02", "title": "Strategize", "description": "We define the right scope and technical direction before committing to a build, so effort goes where it matters." },
       { "number": "03", "title": "Design", "description": "We shape the experience and the architecture together, so the product is coherent from the interface down to the data model." },
-      { "number": "04", "title": "Develop", "description": "We build in focused, visible iterations — with working software you can see and react to throughout." },
+      { "number": "04", "title": "Develop", "description": "We build in focused, visible iterations, with working software you can see and react to throughout." },
       { "number": "05", "title": "Improve", "description": "We treat launch as a starting point. We monitor, listen, and keep refining as real usage reveals what matters." }
     ],
     "valuesEyebrow": "Values",
     "valuesTitle": "What we hold ourselves to.",
     "values": [
       { "title": "Innovation", "description": "We stay close to modern tools and techniques, and apply them only where they genuinely improve the outcome." },
-      { "title": "Quality", "description": "We treat code quality, testing, and reliability as part of the deliverable — not an afterthought." },
+      { "title": "Quality", "description": "We treat code quality, testing, and reliability as part of the deliverable, not an afterthought." },
       { "title": "Transparency", "description": "You should always know what’s being built, why, and where things stand. No black boxes." },
       { "title": "Collaboration", "description": "The best software comes from a real partnership between your team’s knowledge and our engineering." },
       { "title": "Scalability", "description": "We design systems to handle the business you’re building toward, not just the one you have today." }
@@ -338,7 +338,7 @@
     "projectTypes": ["Custom Software", "Web Application", "Mobile App", "SaaS Platform", "Automation", "AI Solution", "Other"],
     "budgets": ["Under $1k", "$1k – $3k", "$3k – $5k", "$5k – $10k", "$10k+", "Not sure yet"],
     "successTitle": "Inquiry sent.",
-    "successDescription": "Thanks for reaching out — we've received your project details and will get back to you shortly.",
+    "successDescription": "Thanks for reaching out. We've received your project details and will get back to you shortly.",
     "sendAnother": "Send another inquiry",
     "errorMessage": "Something went wrong sending your inquiry. Please try again.",
     "sending": "Sending inquiry…",

@@ -10,6 +10,19 @@ function positionFor(index: number, total: number) {
   const angle = (index / total) * 2 * Math.PI - Math.PI / 2
   const x = 50 + RADIUS * Math.cos(angle)
   const y = 50 + RADIUS * Math.sin(angle)
+  return { x, y, angle }
+}
+
+const EDGE_THRESHOLD = 0.05
+
+// Anchors each pill by the corner/edge closest to the hub, instead of its
+// center, so the connecting line always meets the pill's near edge —
+// regardless of how wide the label is — and the label extends outward.
+function anchorFor(angle: number) {
+  const cos = Math.cos(angle)
+  const sin = Math.sin(angle)
+  const x = cos > EDGE_THRESHOLD ? '0%' : cos < -EDGE_THRESHOLD ? '-100%' : '-50%'
+  const y = sin > EDGE_THRESHOLD ? '0%' : sin < -EDGE_THRESHOLD ? '-100%' : '-50%'
   return { x, y }
 }
 
@@ -77,7 +90,7 @@ export default function TechnologyGrid() {
         </div>
 
         {technologies.map((tech, i) => {
-          const { x, y } = positionFor(i, technologies.length)
+          const { x, y, angle } = positionFor(i, technologies.length)
           const dimmed = activeCategory !== null && tech.category !== activeCategory
           return (
             <motion.button
@@ -85,10 +98,11 @@ export default function TechnologyGrid() {
               key={tech.name}
               onMouseEnter={() => setHovered(tech.name)}
               onMouseLeave={() => setHovered(null)}
-              className="absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full border bg-surface px-3.5 py-2 text-xs font-medium shadow-soft transition-all duration-300 ease-premium sm:text-[13px]"
+              className="absolute whitespace-nowrap rounded-full border bg-surface px-3.5 py-2 text-xs font-medium shadow-soft transition-all duration-300 ease-premium sm:text-[13px]"
               style={{
                 left: `${x}%`,
                 top: `${y}%`,
+                ...anchorFor(angle),
                 borderColor: dimmed ? 'var(--color-border)' : 'var(--color-primary)',
                 color: dimmed ? 'var(--color-muted)' : 'var(--color-text)',
                 opacity: dimmed ? 0.35 : 1,

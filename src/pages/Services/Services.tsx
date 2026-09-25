@@ -8,7 +8,18 @@ import AnimatedSection, { StaggerGroup, StaggerItem } from '@/components/Animate
 import { LinkButton } from '@/components/Button/Button'
 import { services } from '@/data/services'
 
-function ServiceVisual({ icon: Icon, index }: { icon: LucideIcon; index: number }) {
+function ServiceVisual({ icon: Icon, index, image }: { icon: LucideIcon; index: number; image?: string }) {
+  if (image) {
+    return (
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-bg-alt">
+        <img src={image} alt="" className="h-full w-full object-cover" />
+        <span className="absolute left-5 top-5 rounded-full bg-black/40 px-2 py-1 font-mono text-xs text-white backdrop-blur-sm">
+          {String(index + 1).padStart(2, '0')}
+        </span>
+      </div>
+    )
+  }
+
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-border bg-bg-alt">
       <div className="absolute inset-0 grid-noise radial-fade opacity-70" aria-hidden="true" />
@@ -84,7 +95,7 @@ export default function Services() {
                   direction={reversed ? 'right' : 'left'}
                   className={reversed ? 'lg:order-2' : ''}
                 >
-                  <ServiceVisual icon={service.icon} index={i} />
+                  <ServiceVisual icon={service.icon} index={i} image={service.image} />
                 </AnimatedSection>
 
                 <AnimatedSection direction={reversed ? 'left' : 'right'} className={reversed ? 'lg:order-1' : ''}>

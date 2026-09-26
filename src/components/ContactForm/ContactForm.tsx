@@ -53,7 +53,9 @@ export default function ContactForm() {
       await submitContactForm(values)
       setStatus('success')
       setValues(initialValues)
-    } catch {
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('[contact form] submission failed', err)
       setStatus('error')
     }
   }

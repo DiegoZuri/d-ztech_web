@@ -16,6 +16,7 @@ import saasDevelopmentImage from '@/assets/services/saas-development.png'
 import businessAutomationImage from '@/assets/services/business-automation.png'
 import aiSolutionsImage from '@/assets/services/ai-solutions.png'
 import systemIntegrationsImage from '@/assets/services/system-integrations.png'
+import businessSystemsImage from '@/assets/services/business-systems.png'
 
 export interface ServiceMeta {
   slug: string
@@ -71,5 +72,6 @@ export const services: ServiceMeta[] = [
     slug: 'business-systems',
     icon: Boxes,
     technologies: ['React', 'Node.js', 'PostgreSQL', 'Cloud infrastructure'],
+    image: businessSystemsImage,
   },
 ]

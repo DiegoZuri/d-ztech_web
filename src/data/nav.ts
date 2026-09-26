@@ -14,7 +14,7 @@ export const navLinks: NavLink[] = [
 export const company = {
   name: 'D&Z Technologies',
   shortName: 'D&Z',
-  email: 'diego.zurita2406@gmail.com',
+  email: 'dz.technologiesllc@gmail.com',
   phone: '+591 79950444',
   social: [
     { label: 'LinkedIn', url: 'https://linkedin.com/in/diegozurita24' },

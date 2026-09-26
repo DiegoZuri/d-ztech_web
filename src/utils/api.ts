@@ -8,18 +8,35 @@ export interface ContactPayload {
   message: string
 }
 
-/**
- * Placeholder submission handler.
- * Replace this with a real request (fetch/axios) to your backend or form
- * provider once an endpoint exists — the calling form already awaits this
- * promise and handles success/error states.
- */
-export async function submitContactForm(payload: ContactPayload): Promise<{ ok: true }> {
-  await new Promise((resolve) => setTimeout(resolve, 1100))
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit'
 
-  if (import.meta.env.DEV) {
-    // eslint-disable-next-line no-console
-    console.info('[contact form] submission payload', payload)
+export async function submitContactForm(payload: ContactPayload): Promise<{ ok: true }> {
+  const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY
+
+  if (!accessKey) {
+    throw new Error('Missing VITE_WEB3FORMS_ACCESS_KEY environment variable')
+  }
+
+  const response = await fetch(WEB3FORMS_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({
+      access_key: accessKey,
+      subject: `New project inquiry from ${payload.name}`,
+      from_name: 'D&Z Technologies website',
+      name: payload.name,
+      company: payload.company,
+      email: payload.email,
+      phone: payload.phone,
+      project_type: payload.projectType,
+      budget: payload.budget,
+      message: payload.message,
+    }),
+  })
+
+  const result = await response.json()
+  if (!response.ok || !result.success) {
+    throw new Error(result.message ?? 'Failed to send message')
   }
 
   return { ok: true }

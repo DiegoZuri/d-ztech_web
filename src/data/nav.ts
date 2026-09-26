@@ -11,6 +11,16 @@ export const navLinks: NavLink[] = [
   { key: 'contact', path: '/contact' },
 ]
 
+export interface LegalLink {
+  key: 'privacyPolicy' | 'termsConditions'
+  path: string
+}
+
+export const legalLinks: LegalLink[] = [
+  { key: 'privacyPolicy', path: '/privacy-policy' },
+  { key: 'termsConditions', path: '/terms-and-conditions' },
+]
+
 export const company = {
   name: 'D&Z Technologies',
   shortName: 'D&Z',

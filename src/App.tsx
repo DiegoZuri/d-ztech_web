@@ -12,8 +12,10 @@ import Services from '@/pages/Services/Services'
 import Solutions from '@/pages/Solutions/Solutions'
 import About from '@/pages/About/About'
 import Contact from '@/pages/Contact/Contact'
+import PrivacyPolicy from '@/pages/PrivacyPolicy/PrivacyPolicy'
+import TermsConditions from '@/pages/TermsConditions/TermsConditions'
 
-const knownPaths = ['services', 'solutions', 'about', 'contact']
+const knownPaths = ['services', 'solutions', 'about', 'contact', 'privacy-policy', 'terms-and-conditions']
 
 function RootRedirect() {
   const { pathname } = useLocation()
@@ -94,6 +96,22 @@ export default function App() {
               element={
                 <PageTransition>
                   <Contact />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="privacy-policy"
+              element={
+                <PageTransition>
+                  <PrivacyPolicy />
+                </PageTransition>
+              }
+            />
+            <Route
+              path="terms-and-conditions"
+              element={
+                <PageTransition>
+                  <TermsConditions />
                 </PageTransition>
               }
             />

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
 import Logo from '@/components/Logo/Logo'
 import { Link } from '@/i18n/LocalizedLink'
-import { company, navLinks } from '@/data/nav'
+import { company, navLinks, legalLinks } from '@/data/nav'
 import { services } from '@/data/services'
 
 export default function Footer() {
@@ -115,7 +115,18 @@ export default function Footer() {
           <span>
             &copy; {year} {company.name}. {t('footer.rights')}
           </span>
-          <span>{t('footer.designed')}</span>
+          <div className="flex items-center gap-5">
+            {legalLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className="link-underline transition-colors hover:text-text"
+              >
+                {t(`footer.${link.key}`)}
+              </Link>
+            ))}
+            <span>{t('footer.designed')}</span>
+          </div>
         </div>
       </div>
     </footer>

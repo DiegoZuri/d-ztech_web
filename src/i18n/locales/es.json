@@ -18,7 +18,9 @@
     "getInTouch": "Contáctanos",
     "startProject": "Iniciar un proyecto",
     "rights": "Todos los derechos reservados.",
-    "designed": "Diseñado y desarrollado con precisión."
+    "designed": "Diseñado y desarrollado con precisión.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsConditions": "Términos y Condiciones"
   },
   "common": {
     "learnMore": "Saber más",
@@ -353,5 +355,103 @@
       "messageRequired": "Cuéntanos un poco sobre lo que necesitas.",
       "messageShort": "Agrega un poco más de detalle (mínimo 20 caracteres)."
     }
+  },
+  "privacyPolicy": {
+    "seo": {
+      "title": "Política de Privacidad",
+      "description": "Cómo D&Z Technologies LLC recolecta, usa y protege la información que compartes a través de este sitio web."
+    },
+    "eyebrow": "Legal",
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 26 de septiembre de 2026",
+    "sections": [
+      {
+        "title": "1. Introducción",
+        "body": "D&Z Technologies LLC (\"D&Z Technologies\", \"nosotros\") respeta tu privacidad. Esta Política de Privacidad explica qué información recolectamos a través de este sitio web, cómo la usamos y cuáles son tus derechos al respecto."
+      },
+      {
+        "title": "2. Información que recolectamos",
+        "body": "Cuando envías nuestro formulario de contacto, recolectamos la información que proporcionas: nombre, empresa, correo electrónico, teléfono, tipo de proyecto, rango de presupuesto y tu mensaje. No usamos cookies de rastreo ni publicidad, y no utilizamos herramientas de analítica en este sitio. Guardamos tu preferencia de idioma (inglés/español) localmente en tu navegador para recordar tu elección en tu próxima visita — este dato nunca se nos envía ni se comparte con nadie."
+      },
+      {
+        "title": "3. Cómo usamos tu información",
+        "body": "Usamos la información que envías únicamente para responder a tu consulta, evaluar tu proyecto y comunicarnos contigo sobre nuestros servicios. No vendemos, alquilamos ni compartimos tu información con terceros con fines de marketing."
+      },
+      {
+        "title": "4. Servicios de terceros",
+        "body": "Para recibir los envíos del formulario de contacto, usamos Web3Forms, un servicio externo de procesamiento de formularios. Al enviar el formulario, tu información se transmite a través de la infraestructura de Web3Forms con el único fin de hacérnosla llegar por correo. Aplican las prácticas de privacidad propias de Web3Forms a esa transmisión; puedes revisar su política en web3forms.com."
+      },
+      {
+        "title": "5. Retención de datos",
+        "body": "Conservamos la información de tu formulario de contacto durante el tiempo necesario para responder tu consulta y, si comenzamos a trabajar juntos, durante la relación comercial y el tiempo que exija la ley posteriormente."
+      },
+      {
+        "title": "6. Tus derechos",
+        "body": "Dependiendo de tu ubicación, puedes tener derecho a acceder, corregir o solicitar la eliminación de tu información personal. Para ejercer estos derechos, escríbenos a dz.technologiesllc@gmail.com."
+      },
+      {
+        "title": "7. Seguridad de los datos",
+        "body": "Tomamos medidas razonables para proteger la información que compartes con nosotros, aunque ningún método de transmisión o almacenamiento electrónico es 100% seguro."
+      },
+      {
+        "title": "8. Privacidad de menores",
+        "body": "Este sitio no está dirigido a menores de 16 años y no recolectamos información de ellos a sabiendas."
+      },
+      {
+        "title": "9. Cambios a esta política",
+        "body": "Podemos actualizar esta Política de Privacidad ocasionalmente. Los cambios se publicarán en esta página con una fecha de revisión actualizada."
+      },
+      {
+        "title": "10. Contacto",
+        "body": "¿Preguntas sobre esta política? Escríbenos a dz.technologiesllc@gmail.com."
+      }
+    ]
+  },
+  "termsConditions": {
+    "seo": {
+      "title": "Términos y Condiciones",
+      "description": "Los términos que rigen el uso del sitio web de D&Z Technologies LLC."
+    },
+    "eyebrow": "Legal",
+    "title": "Términos y Condiciones",
+    "lastUpdated": "Última actualización: 26 de septiembre de 2026",
+    "sections": [
+      {
+        "title": "1. Aceptación de los términos",
+        "body": "Al acceder y usar este sitio web, aceptas estos Términos y Condiciones. Si no estás de acuerdo, por favor no uses este sitio."
+      },
+      {
+        "title": "2. Uso del sitio",
+        "body": "Este sitio web se proporciona con fines informativos sobre los servicios de D&Z Technologies. Aceptas usarlo solo con fines lícitos y no intentar interrumpir, dañar u obtener acceso no autorizado a él."
+      },
+      {
+        "title": "3. Propiedad intelectual",
+        "body": "Todo el contenido de este sitio web —incluyendo textos, gráficos, logotipos y diseño— es propiedad de D&Z Technologies LLC salvo que se indique lo contrario, y no puede reproducirse ni usarse sin nuestro consentimiento previo por escrito."
+      },
+      {
+        "title": "4. No constituye una oferta vinculante",
+        "body": "La información en este sitio web se proporciona solo con fines informativos generales y no constituye una oferta, cotización o contrato vinculante de servicios. Cualquier trabajo real, precio o alcance se regirá por un acuerdo escrito separado entre D&Z Technologies y el cliente."
+      },
+      {
+        "title": "5. Enlaces a terceros",
+        "body": "Este sitio puede contener enlaces a sitios de terceros (como nuestras redes sociales o portafolio). No somos responsables del contenido o las prácticas de esos sitios externos."
+      },
+      {
+        "title": "6. Limitación de responsabilidad",
+        "body": "En la máxima medida permitida por la ley, D&Z Technologies LLC no será responsable por daños indirectos, incidentales o consecuentes derivados del uso de este sitio web."
+      },
+      {
+        "title": "7. Cambios a estos términos",
+        "body": "Podemos modificar estos Términos y Condiciones en cualquier momento. El uso continuado del sitio después de publicados los cambios constituye la aceptación de los términos actualizados."
+      },
+      {
+        "title": "8. Ley aplicable",
+        "body": "Estos Términos se rigen por las leyes del Estado de Connecticut, Estados Unidos, sin considerar principios de conflicto de leyes."
+      },
+      {
+        "title": "9. Contacto",
+        "body": "¿Preguntas sobre estos Términos? Escríbenos a dz.technologiesllc@gmail.com."
+      }
+    ]
   }
 }
